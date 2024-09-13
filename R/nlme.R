@@ -539,7 +539,7 @@ nlme.formula <-
   Dims <- MEdims(grpShrunk, ncols)
   if (max(Dims$ZXlen[[1]]) < Dims$qvec[1]) {
     warning(gettextf("fewer observations than random effects in all level %s groups",
-                     Q), domain = NA)
+                     Q), domain = "R-nlme")
   }
   sran <- vector("list", Q)
   names(sran) <- namGrp
@@ -557,14 +557,14 @@ nlme.formula <-
     if (is.null(namSran <- names(sran0))) {
       if (length(sran) != Q) {
         stop(gettextf("list with starting values for random effects must have names or be of length %d",
-                      Q), domain = NA)
+                      Q), domain = "R-nlme")
       }
       names(sran0) <- rev(namGrp)        # assume given in outer-inner order
     } else {
       if (any(noMatch <- is.na(match(namSran, namGrp)))) {
         stop(sprintf(ngettext(sum(noMatch),
                               "group name not matched in starting values for random effects: %s",
-                              "group names not matched in starting values for random effects: %s"),
+                              "group names not matched in starting values for random effects: %s", domain = "R-nlme"),
                      paste(namSran[noMatch], collapse=", ")), domain = NA)
       }
     }
@@ -579,11 +579,11 @@ nlme.formula <-
       dimsran <- dim(sran[[i]])
       if (dimsran[1] != Dims$ngrps[i]) {
         stop(gettextf("number of rows in starting values for random component at level %s should be %d",
-                      namGrp[i], Dims$ngrps[i]), domain = NA)
+                      namGrp[i], Dims$ngrps[i]), domain = "R-nlme")
       }
       if (dimsran[2] != rlength[i]) {
         stop(gettextf("number of columns in starting values for random component at level %s should be %d",
-                      namGrp[i], rlength[i]), domain = NA)
+                      namGrp[i], rlength[i]), domain = "R-nlme")
       }
       dnamesran <- dimnames(sran[[i]])
       if (is.null(dnamesran[[1]])) {
@@ -592,7 +592,7 @@ nlme.formula <-
         levGrps <- unique(as.character(grps[, Q-i+1]))
         if(!all(sort(dnamesran[[1]]) == sort(levGrps))) {
           stop(gettextf("groups levels mismatch in 'random' and starting values for 'random' at level %s",
-                        namGrp[i]), domain = NA)
+                        namGrp[i]), domain = "R-nlme")
         }
         sran[[i]] <- sran[[i]][levGrps, , drop = FALSE]
       }
@@ -611,7 +611,7 @@ nlme.formula <-
                   dnamesran[[2]][j] <- rn[[i]][mDn]
                 } else {
                   stop (gettextf("names mismatch in 'random' and starting values  for 'random' at level %s",
-                                 namGrp[i]), domain = NA)
+                                 namGrp[i]), domain = "R-nlme")
                 }
               }
             }
@@ -941,7 +941,7 @@ nlme.formula <-
       ##      convResult <- 1
       msg <- gettextf(
 	"maximum number of iterations (maxIter = %d) reached without convergence",
-	controlvals$maxIter)
+	controlvals$maxIter, domain = "R-nlme")
       if (controlvals$returnObject) {
 	warning(msg, domain=NA) ; break
       } else

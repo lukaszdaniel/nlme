@@ -331,7 +331,7 @@ glsEstimate <-
     rnkm1 <- rnk - 1
     if (!control$singular.ok && rnkm1 < p) {
         stop(gettextf("computed \"gls\" fit is singular, rank %s", rnk),
-             domain = NA)
+             domain = "R-nlme")
     }
     N <- dd$N - dd$REML * p
     namCoef <- colnames(oXy)[val[["pivot"]][1:rnkm1] + 1L]	# coef names
@@ -427,7 +427,7 @@ anova.gls <-
     ## returns the likelihood ratio statistics, the AIC, and the BIC
     if ((rt <- ...length() + 1L) == 1L) {    ## just one object
         if (!inherits(object,"gls"))
-            stop(gettextf("object must inherit from class %s", '"gls"'), domain = NA)
+            stop(gettextf("object must inherit from class %s", '"gls"'), domain = "R-nlme")
 	if(is.na(adjustSigma))
 	    ## REML correction already applied to gnls objects
 	    adjustSigma <- inherits(object, "gnls")
@@ -470,14 +470,14 @@ anova.gls <-
                 if (is.numeric(Terms) && all(Terms == as.integer(Terms))) {
                     if (min(Terms) < 1 || max(Terms) > nTerms) {
                         stop(gettextf("'Terms' must be between 1 and %d",
-                                      nTerms), domain = NA)
+                                      nTerms), domain = "R-nlme")
                     }
                 } else {
                     if (is.character(Terms)) {
                         if (any(noMatch <- is.na(match(Terms, names(assign))))) {
                             stop(sprintf(ngettext(sum(noMatch),
                                                   "term %s not matched",
-                                                  "terms %s not matched"),
+                                                  "terms %s not matched", domain = "R-nlme"),
                                          paste(Terms[noMatch], collapse = ", ")),
                                  domain = NA)
                         }
@@ -498,7 +498,7 @@ anova.gls <-
                     stop(sprintf(ngettext(ncol(L),
                                           "'L' must have at most %d column",
                                           "'L' must have at most %d columns"),
-                                 ncol(L)), domain = NA)
+                                 ncol(L)), domain = "R-nlme")
                 }
                 dmsL1 <- rownames(L)
                 L0 <- array(0, c(nrowL, p), list(NULL, names(coef(object))))
@@ -509,7 +509,7 @@ anova.gls <-
                     if (any(noMatch <- is.na(match(dmsL2, colnames(L0))))) {
                         stop(sprintf(ngettext(sum(noMatch),
                                               "effect %s not matched",
-                                              "effects %s not matched"),
+                                              "effects %s not matched", domain = "R-nlme"),
                                      paste(dmsL2[noMatch],collapse=", ")),
                              domain = NA)
                     }
@@ -556,12 +556,12 @@ augPred.gls <-
     data <- eval.parent(object$call$data)
     if (!inherits(data, "data.frame")) {
         stop(gettextf("data in %s call must evaluate to a data frame",
-                      sQuote(substitute(object))), domain = NA)
+                      sQuote(substitute(object))), domain = "R-nlme")
     }
     if(is.null(primary)) {
         if (!inherits(data, "groupedData")) {
             stop(gettextf("%s without \"primary\" can only be used with fits of \"groupedData\" objects",
-                          sys.call()[[1L]]), domain = NA)
+                          sys.call()[[1L]]), domain = "R-nlme")
         }
         primary <- getCovariate(data)
         pr.var <- getCovariateFormula(data)[[2L]]
@@ -667,7 +667,7 @@ comparePred.gls <-
         lv2 <- sort(levels(val2[, 2L]))
         if ((length(lv1) != length(lv2)) || any(lv1 != lv2)) {
             stop(gettextf("%s and %s must have the same group levels", c1, c2),
-                 domain = NA)
+                 domain = "R-nlme")
         }
         val <- rbind(val1[, -4L], val2[, -4L])
         val[, ".type"] <-
@@ -797,7 +797,7 @@ intervals.gls <-
         } else {
             if (is.character(aV)) {
                 stop(gettextf("cannot get confidence intervals on var-cov components: %s",
-                              aV), domain = NA)
+                              aV), domain = "R-nlme")
             }
             len <- -qnorm((1-level)/2) * sqrt(diag(aV))
             est <- attr(aV, "Pars")

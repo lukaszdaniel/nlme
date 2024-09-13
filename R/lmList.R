@@ -106,12 +106,12 @@ augPred.lmList <-
   data <- eval(attr(object, "call")[["data"]])
   if (!inherits(data, "data.frame")) {
       stop(gettextf("'data' in %s call must evaluate to a data frame",
-                     sQuote(substitute(object))), domain = NA)
+                     sQuote(substitute(object))), domain = "R-nlme")
   }
   if(is.null(primary)) {
     if (!inherits(data, "groupedData")) {
         stop(gettextf("%s without \"primary\" can only be used with fits of \"groupedData\" objects",
-                      sys.call()[[1]]), domain = NA)
+                      sys.call()[[1]]), domain = "R-nlme")
     }
     primary <- getCovariate(data)
     pr.var <- getCovariateFormula(data)[[2L]]
@@ -384,7 +384,7 @@ pairs.lmList <-
         stop(sprintf(ngettext(sum(naV),
                               "%s not found in data",
                               "%s not found in data"),
-                     allV[naV]), domain = NA)
+                     allV[naV]), domain = "R-nlme")
      }
     }
   } else data <- NULL
@@ -621,7 +621,7 @@ plot.lmList <-
         stop(sprintf(ngettext(sum(naV),
                               "%s not found in data",
                               "%s not found in data"),
-                      allV[naV]), domain = NA)
+                      allV[naV]), domain = "R-nlme")
      }
     }
   } else data <- NULL
@@ -986,7 +986,7 @@ qqnorm.lmList <-
         stop(sprintf(ngettext(sum(naV),
                               "%s not found in data",
                               "%s not found in data"),
-                     allV[naV]), domain = NA)
+                     allV[naV]), domain = "R-nlme")
     }
   } else data <- NULL
   ## argument list

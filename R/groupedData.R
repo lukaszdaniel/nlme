@@ -248,7 +248,7 @@ collapse.groupedData <-
   }
   if (is.null(grpForm[[displayLevel]])) {
       stop(gettextf("undefined display level %s for %s",
-                    displayLevel, sQuote(substitute(object))), domain = NA)
+                    displayLevel, sQuote(substitute(object))), domain = "R-nlme")
   }
   attribs <- attributes(object)
   ord <- attribs[["order.groups"]][[displayLevel]]
@@ -274,7 +274,7 @@ collapse.groupedData <-
   if (dlevel < Q) {			# may need to collapse object
     if (is.null(grpForm[[collapseLevel]])) {
         stop(gettextf("undefined collapsing level %s for %s",
-                      collapseLevel, sQuote(substitute(object))), domain = NA)
+                      collapseLevel, sQuote(substitute(object))), domain = "R-nlme")
     }
     clevel <- if (is.character(collapseLevel)) {
       match(collapseLevel, grpNames)

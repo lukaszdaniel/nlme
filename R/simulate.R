@@ -115,7 +115,7 @@ simulate.lme <-
     ## m2 is an option list of arguments to lme to define the feared model
     if (inherits(nsim, "lm") || inherits(nsim, "lme"))
         stop("order of arguments in 'simulate.lme' has changed to conform with generic in R-2.2.0",
-             domain = NA)
+             domain = "R-nlme")
 ### FIXME?  if(!ALT)  behave like a regular  simulate() method --> return 'base2' (see below)
     getResults1 <-
 	function(conLin, nIter, pdClass, REML, ssq, p, pp1) {

@@ -44,7 +44,7 @@ corMatrix <-
 ## .chkLenSq <- function(nn) {
 ##   if(nn > .Machine$integer.max)
 ##     stop(gettextf("'sumLenSq' = %g is too large (larger than maximal integer)",
-## 		  nn), domain = NA)
+## 		  nn), domain = "R-nlme")
 ##   else
 ##     nn
 ## }
@@ -75,7 +75,7 @@ corMatrix.corStruct <-
   if (corr) {
     ## Do not know how to calculate the correlation matrix
       stop(gettextf("do not know how to calculate correlation matrix of %s object",
-                    dQuote(class(object)[1])), domain = NA)
+                    dQuote(class(object)[1])), domain = "R-nlme")
   } else {
     ## transpose inverse square root
     corD <- Dim(object,
@@ -128,7 +128,7 @@ coef.corStruct <-
     }
   } else {
       stop(gettextf("do not know how to obtain parameters of %s object",
-                    dQuote(class(object)[1])), domain = NA)
+                    dQuote(class(object)[1])), domain = "R-nlme")
   }
 }
 
@@ -159,7 +159,7 @@ Dim.corStruct <- function(object, groups, ...)
     stop(gettextf(
       "'sumLenSq := sum(table(groups)^2)' = %g is too large.
  Too large or no groups in your correlation structure?",
-		  suml2), call. = FALSE, domain = NA)
+		  suml2), call. = FALSE, domain = "R-nlme")
   list(N = length(groups),
        M = length(len),
        maxLen = max(len),
@@ -856,7 +856,7 @@ corFactor.corAR1 <- function(object, ...)
   corD <- Dim(object)
   if(corD[["sumLenSq"]] > .Machine$integer.max)
     stop(gettextf("'sumLenSq' = %g is too large (larger than maximal integer)",
-		  corD[["sumLenSq"]]), domain = NA)
+		  corD[["sumLenSq"]]), domain = "R-nlme")
   val <- .C(AR1_factList,
 	    as.double(as.vector(object)),
 	    as.integer(unlist(corD)),
@@ -1328,7 +1328,7 @@ Initialize.corARMA <-
     maxLag <- max(unlist(lapply(covar, function(el) diff(range(el)))))
     if (p > maxLag || q > maxLag) {
       stop(gettextf("\"corARMA\" order (%g, %g) exceeds maximum lag in data (%g)",
-                    p, q, maxLag), domain = NA)
+                    p, q, maxLag), domain = "R-nlme")
     }
     attr(object, "maxLag") <- maxLag
     attr(object, "factor") <- corFactor(object)
@@ -1491,7 +1491,7 @@ Initialize.corCompSymm <-
   corD <- Dim(object)
   if (natPar <= (attr(object, "inf") <- -1/(corD[["maxLen"]] - 1))) {
       stop(gettextf("initial value in \"corCompSymm\" must be greater than %s",
-                    attr(object, "inf")), domain = NA)
+                    attr(object, "inf")), domain = "R-nlme")
   }
   object[] <- log((natPar - attr(object, "inf"))/(1 - natPar))
   attr(object, "factor") <- corFactor(object)

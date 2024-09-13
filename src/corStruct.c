@@ -26,7 +26,7 @@
 #include "matrix.h"
 #include <R_ext/Applic.h>
 #include <float.h> // for DBL_EPSILON
-
+#include "localization.h"
 
 /* Factor list and Recalc for general corStruct object */
 

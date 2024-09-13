@@ -12,11 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nlme 3.1-105\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-06 12:49+0200\n"
+"POT-Creation-Date: 2024-09-13 19:57+0200\n"
 "PO-Revision-Date: 2013-08-16 18:27-0600\n"
 "Last-Translator: Chel Hee Lee <gnustats@gmail.com>\n"
-"Language-Team: R Development Translation Teams (Korean) <gnustats@korea.gnu."
-"org>\n"
+"Language-Team: R Development Translation Teams (Korean) <gnustats@korea.gnu.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,45 +36,42 @@ msgstr "가역적이지 않은 계수행렬입니다"
 msgid "Unknown spatial correlation class"
 msgstr "알 수 없는 spatial correlation 클래스입니다"
 
-#: nlme.c:468
+#: nlme.c:469
 msgid "First observation on an individual must have a dose"
 msgstr "개인의 첫번째 관측값은 반드시 dose 이어야 합니다"
 
-#: nlmefit.c:426
+#: nlmefit.c:427
 #, c-format
 msgid "Singularity in backsolve at level %ld, block %ld"
 msgstr ""
 
-#: nlmefit.c:464
+#: nlmefit.c:465
 #, c-format
-msgid ""
-"Too many parameters for finite-difference Hessian; npar = %d, nTot = %g."
+msgid "Too many parameters for finite-difference Hessian; npar = %d, nTot = %g."
 msgstr ""
 
-#: nlmefit.c:575 nlmefit.c:756
+#: nlmefit.c:576 nlmefit.c:757
 msgid "Overfitted model!"
 msgstr ""
 
-#: nlmefit.c:601
+#: nlmefit.c:602
 msgid "analytic gradient is not available with matrix logarithm"
 msgstr "analytic gradient는 matrix logarithm과 함께 사용할 수 없습니다"
 
-#: nlmefit.c:624
+#: nlmefit.c:625
 msgid "analytic gradient is not available with compound symmetry"
 msgstr "analytic gradient는 compound symmetry와 함께 사용할 수 없습니다"
 
-#: nlmefit.c:917
+#: nlmefit.c:918
 #, fuzzy, c-format
 msgid "Unable to form eigenvalue-eigenvector decomposition [RS(.) ierr = %d]"
 msgstr "고유값-고유벡터 분해를 할 수 없습니다"
 
-#: nlmefit.c:949
+#: nlmefit.c:950
 #, fuzzy, c-format
-msgid ""
-"Unable to form Cholesky decomposition: the leading minor of order %d is not "
-"pos.def."
+msgid "Unable to form Cholesky decomposition: the leading minor of order %d is not pos.def."
 msgstr "콜레스키 분해를 할 수 없습니다"
 
-#: nlmefit.c:981
+#: nlmefit.c:982
 msgid "Haven't written the compound symmetry case for this yet"
 msgstr "이것에 대하여 compound symmetry의 경우는 아직 작성되지 않았습니다"

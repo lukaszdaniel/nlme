@@ -136,7 +136,7 @@ pdConstruct.pdMat <-
       form <- value
     } else {
         stop(gettextf("%s is not a valid object for \"pdMat\"",
-                      sQuote(deparse(object))), domain = NA)
+                      sQuote(deparse(object))), domain = "R-nlme")
     }
   }
 
@@ -313,14 +313,14 @@ Names.pdMat <-
     if (length(dn <- Names(object)) == 0) {
       if (isInitialized(object)) {	# object is initialized without names
 	if (length(value) != (aux <- Dim(object)[2])) {
-            stop(gettextf("Length of names should be %d", aux), domain = NA)
+            stop(gettextf("Length of names should be %d", aux), domain = "R-nlme")
 	}
       }
       attr(object, "Dimnames") <- list(value, value)
       return(object)
     }
     if (length(dn) != length(value)) {
-        stop(gettextf("Length of names should be %d", length(dn)), domain = NA)
+        stop(gettextf("Length of names should be %d", length(dn)), domain = "R-nlme")
     }
     err <- FALSE
     if (any(noMatch <- is.na(match(value, dn)))) {
@@ -615,7 +615,7 @@ pdConstruct.pdSymm <-
   Ncol <- round((sqrt(8*length(val) + 1) - 1)/2)
   if (length(val) != round((Ncol * (Ncol + 1))/2)) {
       stop(gettextf("an object of length %d does not match the required parameter size",
-                    length(val)), domain = NA)
+                    length(val)), domain = "R-nlme")
   }
   class(val) <- c("pdSymm", "pdMat")
   val
@@ -739,7 +739,7 @@ pdConstruct.pdLogChol <-
   Ncol <- round((sqrt(8*length(val) + 1) - 1)/2)
   if (length(val) != round((Ncol * (Ncol + 1))/2)) {
       stop(gettextf("an object of length %d does not match a Cholesky factor",
-                    length(val)), domain = NA)
+                    length(val)), domain = "R-nlme")
   }
   class(val) <- c("pdLogChol", "pdSymm", "pdMat")
   val
@@ -1145,7 +1145,7 @@ pdConstruct.pdNatural <-
   Ncol <- round((sqrt(8*length(val) + 1) - 1)/2)
   if (length(val) != round((Ncol * (Ncol + 1))/2)) {
       stop(gettextf("an object of length %d does not match the required parameter size",
-                    length(val)), domain = NA)
+                    length(val)), domain = "R-nlme")
   }
   class(val) <- c("pdNatural", "pdMat")
   val
@@ -1307,7 +1307,7 @@ pdConstruct.pdDiag <-
   if ((aux <- length(Names(val))) > 0) {
     if (aux && (aux != length(val))) {
         stop(gettextf("an object of length %d does not match the required parameter size",
-                      length(val)), domain = NA)
+                      length(val)), domain = "R-nlme")
     }
   }
   val
@@ -1448,7 +1448,7 @@ pdConstruct.pdIdent <-
   }
   if (length(val) > 1) {
       stop(gettextf("an object of length %d does not match the required parameter size",
-                    length(val)), domain = NA)
+                    length(val)), domain = "R-nlme")
   }
   if (((aux <- length(Names(val))) == 0) && is.null(formula(val))) {
     stop("must give names when initializing \"pdIdent\" from parameter without a formula")
@@ -1599,7 +1599,7 @@ pdConstruct.pdCompSymm <-
   }
   if (length(val) != 2) {
       stop(gettextf("an object of length %d does not match the required parameter size",
-                    length(val)), domain = NA)
+                    length(val)), domain = "R-nlme")
   }
   if (((aux <- length(Names(val))) == 0) && is.null(formula(val))) {
     stop("must give names when initializing \"pdCompSymm\" from parameter without a formula")

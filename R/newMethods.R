@@ -277,7 +277,7 @@ plot.nls <-
           stop(sprintf(ngettext(sum(naV),
                                 "%s not found in data",
                                 "%s not found in data"),
-                       allV[naV]), domain = NA)
+                       allV[naV]), domain = "R-nlme")
      }
     }
   } else data <- NULL
@@ -693,7 +693,7 @@ qqnorm.nls <-
         stop(sprintf(ngettext(sum(naV),
                               "%s not found in data",
                               "%s not found in data"),
-                     allV[naV]), domain = NA)
+                     allV[naV]), domain = "R-nlme")
       }
     }
   } else data <- NULL

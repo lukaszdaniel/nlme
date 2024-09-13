@@ -53,7 +53,7 @@ getVarCov.lme <-
             ni <- sum(ind, na.rm = TRUE)
             if (ni == 0)
                 stop(gettextf("individual %s was not used in the fit",
-                              sQuote(individ)), domain = NA)
+                              sQuote(individ)), domain = "R-nlme")
             if(!is.null(csT <- obj$modelStruct$corStruct)
                && ni > 1) { # corMatrix.corSpatial() excludes 1-obs groups (PR#16806)
                 V <- corMatrix(csT)[[individ]]
@@ -98,7 +98,7 @@ getVarCov.gls <-
     ni <- sum(ind, na.rm = TRUE)
     if (ni == 0)
         stop(gettextf("individual %s was not used in the fit",
-                      sQuote(individual)), domain = NA)
+                      sQuote(individual)), domain = "R-nlme")
     S <- if (ni > 1) corMatrix(csT)[[individual]] else diag(1) # PR#16806
     if (!is.null( obj$modelStruct$varStruct))
     {

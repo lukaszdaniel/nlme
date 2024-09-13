@@ -29,6 +29,7 @@
 #include "nlmefit.h"
 #include "matrix.h"
 #include "pdMat.h"
+#include "localization.h"
 
 // 17-11-2015; Fixed sigma patch; E van Willigen; Quantitative Solutions
 static double *_sigma_; /* This to provide msmnh out-of-band the sigma. */

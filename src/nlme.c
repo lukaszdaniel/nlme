@@ -28,6 +28,7 @@
 #include "nlOptimizer.h"
 #include "matrix.h"
 #include "nlmefit.h"
+#include "localization.h"
 
 extern void corStruct_recalc(double *, int *, int *, double *);
 

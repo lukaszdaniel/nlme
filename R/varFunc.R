@@ -79,7 +79,7 @@ coef.varFunc <-
     val
   } else {
       stop(gettextf("do not know how to get coefficients for %s object",
-                    dQuote(class(object)[1])), domain = NA)
+                    dQuote(class(object)[1])), domain = "R-nlme")
   }
 }
 
@@ -392,7 +392,7 @@ Initialize.varIdent <-
       } else {
 	if (length(as.vector(object)) != (len <- (nStratVar - 1))) {
             stop(gettextf("initial value for \"varIdent\" should be of length %d",
-                          len), domain = NA)
+                          len), domain = "R-nlme")
 	}
 	if (!is.null(stN <- attr(object, "groupNames"))) {
 	  missStrat <- uStrat[is.na(match(uStrat, stN))]
@@ -588,7 +588,7 @@ Initialize.varPower <-
 	} else {
 	  if (length(as.vector(object)) != nStratVar) {
               stop(gettextf("initial value for \"varPower\" should be of length %d",
-                            nStratVar), domain = NA)
+                            nStratVar), domain = "R-nlme")
 	  }
 	  stN <- attr(object, "groupNames") # must have names
 	  if (length(stN) != length(uStrat) ||
@@ -799,7 +799,7 @@ Initialize.varExp <-
 	} else {
 	  if (length(as.vector(object)) != nStratVar) {
               stop(gettextf("initial value for \"varExp\" should be of length %d",
-                            nStratVar), domain = NA)
+                            nStratVar), domain = "R-nlme")
 	  }
 	  stN <- attr(object, "groupNames") #must have names
 	  if ((length(stN) != length(uStrat)) ||
@@ -898,14 +898,14 @@ varConstPower <-
   CPconstr <- function(val, form, nam) {
     if ((lv <- length(val)) == 0) return(val)
     if (lv > 2) {
-      stop(gettextf("%s can have at most two components", nam), domain = NA)
+      stop(gettextf("%s can have at most two components", nam), domain = "R-nlme")
     }
     if (is.null(nv <- names(val))) {
       names(val) <- c("const", "power")[1:lv]
     } else {
       if (anyNA(match(nv, c("const", "power")))) {
         stop(gettextf("%s can only have names \"const\" and \"power\"", nam),
-             domain = NA)
+             domain = "R-nlme")
       }
     }
     nv <- names(val)
@@ -914,7 +914,7 @@ varConstPower <-
       grpNames <- unique(unlist(lapply(val, names)))
     } else {				# must be a vector or a scalar
       if (!is.numeric(val)) {
-        stop(gettextf("%s can only be a list or numeric", nam), domain = NA)
+        stop(gettextf("%s can only be a list or numeric", nam), domain = "R-nlme")
      }
       val <- as.list(val)
       names(val) <- nv
@@ -923,7 +923,7 @@ varConstPower <-
     if (!is.null(getGroupsFormula(form))) {
       if (any(vapply(val, function(el) length(el) > 1 && is.null(names(el)), NA)))
         stop(gettextf("%s must have group names in 'varConstPower'", nam),
-             domain = NA)
+             domain = "R-nlme")
       attr(val, "groupNames") <- grpNames
     }
     if (length(const <- val$const) > 0) {
@@ -1068,7 +1068,7 @@ Initialize.varConstPower <-
 	  } else {
 	    if (length(as.vector(object[[i]])) != nStratVar) {
                 stop(gettext("initial value should be of length %d",
-                             nStratVar), domain = NA)
+                             nStratVar), domain = "R-nlme")
 	    }
 	    stN <- names(object[[i]]) # must have names
 	    if ((length(stN) != length(uStratVar)) ||
@@ -1116,7 +1116,7 @@ Initialize.varConstPower <-
   }
   aux <- 2 - sum(whichFix[,1])
   if (length(as.vector(unlist(object))) != aux) {
-      stop(gettext("initial value should be of length %d", aux), domain = NA)
+      stop(gettext("initial value should be of length %d", aux), domain = "R-nlme")
   }
   NextMethod()
 }
@@ -1164,14 +1164,14 @@ varConstProp <-
   CPconstr <- function(val, form, nam) {
     if ((lv <- length(val)) == 0) return(val)
     if (lv > 2) {
-      stop(gettextf("%s can have at most two components", nam), domain = NA)
+      stop(gettextf("%s can have at most two components", nam), domain = "R-nlme")
     }
     if (is.null(nv <- names(val))) {
       names(val) <- c("const", "prop")[1:lv]
     } else {
       if (anyNA(match(nv, c("const", "prop")))) {
         stop(gettextf("%s can only have names \"const\" and \"prop\"", nam),
-             domain = NA)
+             domain = "R-nlme")
       }
     }
     nv <- names(val)
@@ -1180,7 +1180,7 @@ varConstProp <-
       grpNames <- unique(unlist(lapply(val, names)))
     } else {				# must be a vector or a scalar
       if (!is.numeric(val)) {
-        stop(gettextf("%s can only be a list or numeric", nam), domain = NA)
+        stop(gettextf("%s can only be a list or numeric", nam), domain = "R-nlme")
      }
       val <- as.list(val)
       names(val) <- nv
@@ -1189,7 +1189,7 @@ varConstProp <-
     if (!is.null(getGroupsFormula(form))) {
       if (any(vapply(val, function(el) length(el) > 1 && is.null(names(el)), NA)))
         stop(gettextf("%s must have group names in 'varConstProp'", nam),
-             domain = NA)
+             domain = "R-nlme")
       attr(val, "groupNames") <- grpNames
     }
     if (length(const <- val$const) > 0) {
@@ -1334,7 +1334,7 @@ Initialize.varConstProp <-
 	  } else {
 	    if (length(as.vector(object[[i]])) != nStratVar) {
                 stop(gettext("initial value should be of length %d",
-                             nStratVar), domain = NA)
+                             nStratVar), domain = "R-nlme")
 	    }
 	    stN <- names(object[[i]]) # must have names
 	    if ((length(stN) != length(uStratVar)) ||
@@ -1382,7 +1382,7 @@ Initialize.varConstProp <-
   }
   aux <- 2 - sum(whichFix[,1])
   if (length(as.vector(unlist(object))) != aux) {
-      stop(gettext("initial value should be of length %d", aux), domain = NA)
+      stop(gettext("initial value should be of length %d", aux), domain = "R-nlme")
   }
   NextMethod()
 }

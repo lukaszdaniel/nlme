@@ -291,7 +291,7 @@ lme.formula <-
          sigma = controlvals$sigma, auxSigma = 0)
   ## checking if enough observations per group to estimate ranef
   if(max(dims$ZXlen[[1L]]) < dims$qvec[1L] && !isTRUE(allow <- controlvals$allow.n.lt.q)) {
-    msg <- gettextf("fewer observations than random effects in all level %s groups", Q)
+    msg <- gettextf("fewer observations than random effects in all level %s groups", Q, domain = "R-nlme")
     if(isFALSE(allow))
         stop (msg, domain = NA)
     else # typically NA, was hardwired default in nlme <= 3.1-137 [2018]
@@ -352,7 +352,7 @@ lme.formula <-
       if (optRes$convergence) {
         msg <- gettextf("%s problem, convergence error code = %s\n  message = %s",
                         controlvals$opt, optRes$convergence,
-                        paste(optRes$message, collapse = ""))
+                        paste(optRes$message, collapse = ""), domain = "R-nlme")
         if(!controlvals$returnObject)
           stop(msg, domain = NA)
         else
@@ -378,7 +378,7 @@ lme.formula <-
       break
     }
     if (numIter > controlvals$maxIter) {
-      msg <- gettext("maximum number of iterations (lmeControl(maxIter)) reached without convergence")
+      msg <- gettext("maximum number of iterations (lmeControl(maxIter)) reached without convergence", domain = "R-nlme")
       if (controlvals$returnObject) {
         warning(msg, domain = NA)
         break
@@ -868,7 +868,7 @@ anova.lme <-
   Lmiss <- missing(L)
   if ((rt <- ...length() + 1L) == 1L) {    ## just one object
     if (!inherits(object,"lme")) {
-      stop(gettextf("object must inherit from class %s", '"lme"'), domain = NA)
+      stop(gettextf("object must inherit from class %s", '"lme"'), domain = "R-nlme")
     }
     vFix <- attr(object$fixDF, "varFixFact")
     if (adjustSigma && object$method == "ML")
@@ -906,14 +906,14 @@ anova.lme <-
         if (is.numeric(Terms) && all(Terms == as.integer(Terms))) {
           if (min(Terms) < 1 || max(Terms) > nTerms) {
             stop(gettextf("'Terms' must be between 1 and %d", nTerms),
-                 domain = NA)
+                 domain = "R-nlme")
           }
         } else {
           if (is.character(Terms)) {
             if (any(noMatch <- is.na(match(Terms, names(assign))))) {
               stop(sprintf(ngettext(sum(noMatch),
                                     "term %s not matched",
-                                    "terms %s not matched"),
+                                    "terms %s not matched", domain = "R-nlme"),
                            paste(Terms[noMatch], collapse = ", ")),
                    domain = NA)
             }
@@ -937,7 +937,7 @@ anova.lme <-
           stop(sprintf(ngettext(nX,
                                 "'L' must have at most %d column",
                                 "'L' must have at most %d columns"),
-                       nX), domain = NA)
+                       nX), domain = "R-nlme")
         }
         dmsL1 <- rownames(L)
         L0 <- array(0, c(nrowL, nX), list(NULL, names(object$fixDF$X)))
@@ -948,7 +948,7 @@ anova.lme <-
           if (any(noMatch <- is.na(match(dmsL2, colnames(L0))))) {
             stop(sprintf(ngettext(sum(noMatch),
                                   "effect %s not matched",
-                                  "effects %s not matched"),
+                                  "effects %s not matched", domain = "R-nlme"),
                          paste(dmsL2[noMatch],collapse=", ")),
                  domain = NA)
           }
@@ -1088,13 +1088,13 @@ augPred.lme <-
   data <- eval.parent(object$call$data)
   if (!inherits(data, "data.frame")) {
     stop(gettextf("data in %s call must evaluate to a data frame",
-                  sQuote(substitute(object))), domain = NA)
+                  sQuote(substitute(object))), domain = "R-nlme")
   }
   if(is.null(primary)) {
     if (!inherits(data, "groupedData")) {
       stop(gettextf(
         "%s without \"primary\" can only be used with fits of \"groupedData\" objects",
-        sys.call()[[1L]]), domain = NA)
+        sys.call()[[1L]]), domain = "R-nlme")
     }
     primary <- getCovariate(data)
     pr.var <- getCovariateFormula(data)[[2L]]
@@ -1231,7 +1231,7 @@ fitted.lme <-
       stop(sprintf(ngettext(sum(aux),
                             "nonexistent level %s",
                             "nonexistent levels %s"),
-                   level[aux]), domain = NA)
+                   level[aux]), domain = "R-nlme")
     }
     level <- nlevel
   } else {				# assuming integers
@@ -1307,7 +1307,7 @@ intervals.lme <-
   if (which != "fixed") {		# variance-covariance included
     if (is.character(aV <- object$apVar)) {
       stop(gettextf("cannot get confidence intervals on var-cov components: %s\n Consider '%s'",
-                    aV, "which = \"fixed\""), domain = NA)
+                    aV, "which = \"fixed\""), domain = "R-nlme")
     }
     est <- attr(aV, "Pars")
     nP <- length(est)
@@ -1457,7 +1457,7 @@ pairs.lme <-
         stop(sprintf(ngettext(sum(naV),
                               "%s not found in data",
                               "%s not found in data"),
-                     allV[naV]), domain = NA)
+                     allV[naV]), domain = "R-nlme")
       }
     }
   } else data <- NULL
@@ -1683,7 +1683,7 @@ plot.ranef.lme <-
       if (any(whichNA <- is.na(match(onames, names(argData))))) {
         stop(sprintf(ngettext(sum(whichNA),
                               "%s not available for plotting",
-                              "%s not available for plotting"),
+                              "%s not available for plotting", domain = "R-nlme"),
                      onames[whichNA], collapse = ", "), domain = NA)
       }
       argData[[".groups"]] <-
@@ -1723,7 +1723,7 @@ plot.ranef.lme <-
     reName <- deparse(reName)
     if (is.na(match(reName, eNames))) {
       stop(gettextf("%s is not a valid effect name", sQuote(reName)),
-           domain = NA)
+           domain = "R-nlme")
     }
     vNames <- all.vars(form[[3]])       # variable names
     if (any(!is.na(match(vNames, eNames)))) {
@@ -1732,7 +1732,7 @@ plot.ranef.lme <-
     if (any(whichNA <- is.na(match(vNames, names(x))))) {
       stop(sprintf(ngettext(sum(whichNA),
                             "%s not available for plotting",
-                            "%s not available for plotting"),
+                            "%s not available for plotting", domain = "R-nlme"),
                    onames[whichNA], collapse = ", "), domain = NA)
     }
     nV <- length(vNames)                # number of variables
@@ -2194,7 +2194,7 @@ qqnorm.lme <-
         stop(sprintf(ngettext(sum(naV),
                               "%s not found in data",
                               "%s not found in data"),
-                     allV[naV]), domain = NA)
+                     allV[naV]), domain = "R-nlme")
       }
     }
   } else data <- NULL
@@ -2464,7 +2464,7 @@ residuals.lme <-
       stop(sprintf(ngettext(sum(aux),
                             "nonexistent level %s",
                             "nonexistent levels %s"),
-                   level[aux]), domain = NA)
+                   level[aux]), domain = "R-nlme")
     }
     level <- nlevel
   } else {				# assuming integers
