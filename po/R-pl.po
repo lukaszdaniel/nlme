@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: nlme 3.1-115\n"
 "Report-Msgid-Bugs-To: bugs@r-project.org\n"
 "POT-Creation-Date: 2024-09-13 20:06\n"
-"PO-Revision-Date: 2024-09-13 20:06+0200\n"
+"PO-Revision-Date: 2024-09-17 17:41+0200\n"
 "Last-Translator: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language-Team: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language: pl_PL\n"
@@ -18,14 +18,14 @@ msgstr ""
 #. R/corStruct.R: gettextf("\"corARMA\" order (%g, %g) exceeds maximum lag in data (%g)",     p, q, maxLag)
 #: R/corStruct.R:0
 msgid "\"corARMA\" order (%g, %g) exceeds maximum lag in data (%g)"
-msgstr ""
+msgstr "Kolejność \"corARMA\" (%g, %g) przekracza maksymalne opóźnienie w danych (%g)"
 
 # nlme/R/corStruct.R: 107
 # stop("\"corStruct\" object must have a \"fixed\" attribute")
 #. R/corStruct.R: stop("\"corStruct\" object must have a \"fixed\" attribute")
 #: R/corStruct.R:0
 msgid "\"corStruct\" object must have a \"fixed\" attribute"
-msgstr "obiekt \"corStruct\" musi posiadać atrybut \"fixed\"."
+msgstr "obiekt klasy \"corStruct\" musi posiadać atrybut \"fixed\""
 
 #. R/reStruct.R: stop("\"pdMat\" element must have a formula")
 #: R/reStruct.R:0
@@ -71,7 +71,6 @@ msgstr "%s może posiadać jedynie nazwy \"const\" oraz \"power\""
 # stop(gettextf("%s can only have names \"const\" and \"power\"", nam), domain = "R-nlme")
 #. R/varFunc.R: gettextf("%s can only have names \"const\" and \"prop\"", nam)
 #: R/varFunc.R:0
-#, fuzzy
 msgid "%s can only have names \"const\" and \"prop\""
 msgstr "%s może posiadać jedynie nazwy \"const\" oraz \"power\""
 
@@ -100,9 +99,8 @@ msgstr "%s musi posiadać nazwy grup w 'varConstPower'"
 # stop(gettextf("%s must have group names in 'varConstPower'", nam), domain = "R-nlme")
 #. R/varFunc.R: gettextf("%s must have group names in 'varConstProp'", nam)
 #: R/varFunc.R:0
-#, fuzzy
 msgid "%s must have group names in 'varConstProp'"
-msgstr "%s musi posiadać nazwy grup w 'varConstPower'"
+msgstr "%s musi posiadać nazwy grup w 'varConstProp'"
 
 # nlme/R/lme.R: 342
 # gettextf("%s problem, convergence error code = %s\n  message = %s", controlvals$opt, optRes$convergence, paste(optRes$message, collapse = ""))
@@ -164,9 +162,8 @@ msgstr "funkcja 'asTable()' nie może być użyta z wielopoziomowymi zgrupowanym
 # stop("second argument must be a groupedData object")
 #. R/lmList.R: message("'data' argument not used, but taken from groupedData object")
 #: R/lmList.R:0
-#, fuzzy
 msgid "'data' argument not used, but taken from groupedData object"
-msgstr "drugi argument musi być obiektem \"groupedData\""
+msgstr "argument 'data' nie jest używany, ale wzięty z obiektu klasy \"groupedData\""
 
 # nlme/R/lmList.R: 113
 # stop(gettextf("'data' in %s call must evaluate to a data frame", sQuote(substitute(object))), domain = "R-nlme")
@@ -187,7 +184,7 @@ msgstr "argument 'data' musi być obiektem klasy \"groupedData\" jeśli argument
 #. R/lmList.R: stop("'data' must be a \"groupedData\" object if 'groups' argument is missing")
 #: R/lmList.R:0
 msgid "'data' must be a \"groupedData\" object if 'groups' argument is missing"
-msgstr "argument 'data' musi być obiektem klasy \"groupedData\" jeśli brakuje argumentu 'groups' "
+msgstr "argument 'data' musi być obiektem klasy \"groupedData\" jeśli brakuje argumentu 'groups'"
 
 # nlme/R/gnls.R: 85
 # stop("'data' must be given explicitly to use 'nls' to get initial estimates")
@@ -510,11 +507,13 @@ msgid ""
 "'sumLenSq := sum(table(groups)^2)' = %g is too large.\n"
 " Too large or no groups in your correlation structure?"
 msgstr ""
+"wartość 'sumLenSq := sum(table(groups)^2)' = %g jest za duża.\n"
+" Zbyt duże grupy lub ich brak w strukturze korelacji?"
 
 #. R/corStruct.R: gettextf("'sumLenSq' = %g is too large (larger than maximal integer)",     corD[["sumLenSq"]])
 #: R/corStruct.R:0
 msgid "'sumLenSq' = %g is too large (larger than maximal integer)"
-msgstr ""
+msgstr "wartość 'sumLenSq' = %g jest za duża (większe niż maksymalna liczba całkowita)"
 
 #. R/varFunc.R: stop("'value' must be a one sided formula")
 #: R/varFunc.R:0
@@ -541,23 +540,23 @@ msgstr "argument 'which' musi być pomiędzy 1 a %d"
 #. R/zzMethods.R: stop("AIC undefined for REML fit")
 #: R/zzMethods.R:0
 msgid "AIC undefined for REML fit"
-msgstr ""
+msgstr "AIC nie jest zdefiniowane dla dopasowania REML"
 
 #. R/nlme.R: if (convIter >= control$iter.max) "Do increase 'msMaxIter'!" else if (!is.null(msg <- optRes$message)) paste("PORT message:",     msg)
 #. R/nlme.R: if (aNlm$code == 4) "Do increase 'msMaxIter'!"
 #: R/nlme.R:0
 msgid "Do increase 'msMaxIter'!"
-msgstr ""
+msgstr "Zwiększ wartość 'msMaxIter'!"
 
 #. R/nlme.R: sprintf("Iteration %d, LME step: nlm() did not converge (code = %d).",     numIter, aNlm$code)
 #: R/nlme.R:0
 msgid "Iteration %d, LME step: nlm() did not converge (code = %d)."
-msgstr ""
+msgstr "Iteracja %d, krok LME: nlm() nie zbiegło się (kod = %d)."
 
 #. R/nlme.R: sprintf("Iteration %d, LME step: nlminb() did not converge (code = %d).",     numIter, optRes$convergence)
 #: R/nlme.R:0
 msgid "Iteration %d, LME step: nlminb() did not converge (code = %d)."
-msgstr ""
+msgstr "Iteracja %d, krok LME: nlminb() nie zbiegło się (kod = %d)."
 
 # nlme/R/lme.R: 950
 # stop("L may only involve fixed effects with the same denominator DF")
@@ -586,7 +585,7 @@ msgstr "Długość nazw powinna wynosić %d"
 #. R/nlme.R: paste("PORT message:", msg)
 #: R/nlme.R:0
 msgid "PORT message:"
-msgstr ""
+msgstr "Komunikat PORT:"
 
 #. R/gls.R: stop("Within-group std. dev. must be a positive numeric value")
 #. R/gnls.R: stop("Within-group std. dev. must be a positive numeric value")
@@ -594,14 +593,14 @@ msgstr ""
 #. R/nlme.R: stop("Within-group std. dev. must be a positive numeric value")
 #: R/gls.R:0 R/gnls.R:0 R/lme.R:0 R/nlme.R:0
 msgid "Within-group std. dev. must be a positive numeric value"
-msgstr ""
+msgstr "Odchylenie standardowe w obrębie grupy musi być dodatnią wartością liczbową"
 
 # nlme/R/varFunc.R: 1159
 # stop("all arguments to 'varComb' must be of class \"varFunc\".")
 #. R/varFunc.R: stop("all arguments to 'varComb' must be of class \"varFunc\".")
 #: R/varFunc.R:0
 msgid "all arguments to 'varComb' must be of class \"varFunc\"."
-msgstr "wszystkie argumenty przekazywane do funkcji 'varComb()' muszą być obiektami klasy \"varFunc\""
+msgstr "wszystkie argumenty przekazywane do funkcji 'varComb()' muszą być obiektami klasy \"varFunc\"."
 
 # nlme/R/pdMat.R: 1863
 # stop("all elements in the argument must generate \"pdMat\" objects")
@@ -710,9 +709,8 @@ msgstr "argumenty sugerują różną liczbę bloków"
 # stop("initial values for 'varIdent' must be > 0")
 #. R/corStruct.R: stop("at least one of 'p' and 'q' must be > 0")
 #: R/corStruct.R:0
-#, fuzzy
 msgid "at least one of 'p' and 'q' must be > 0"
-msgstr "początkowe wartości dla 'varIdent' muszą być > 0"
+msgstr "co najmniej jeden z 'p' oraz 'q' musi być > 0"
 
 # nlme/R/newMethods.R: 209
 # stop("at least two coefficients are needed")
@@ -1098,11 +1096,12 @@ msgstr "nie można uzyskać przedziałów ufności na komponentach var-cov: %s"
 # stop(gettextf("cannot get confidence intervals on var-cov components: %s", aV), domain = "R-nlme")
 #. R/lme.R: gettextf("cannot get confidence intervals on var-cov components: %s\n Consider '%s'",     aV, "which = \"fixed\"")
 #: R/lme.R:0
-#, fuzzy
 msgid ""
 "cannot get confidence intervals on var-cov components: %s\n"
 " Consider '%s'"
-msgstr "nie można uzyskać przedziałów ufności na komponentach var-cov: %s"
+msgstr ""
+"nie można uzyskać przedziałów ufności na komponentach var-cov: %s\n"
+" Rozważ '%s'"
 
 # nlme/R/pdMat.R: 526
 # stop("cannot get the inverse of an uninitialized object")
@@ -1193,9 +1192,8 @@ msgstr "obliczone dopasowanie \"gls\" jest osobliwe, ranga %s"
 #. R/varFunc.R: stop("constant in \"varConstProp\" structure must be > 0")
 #. R/varFunc.R: stop("constant in \"varConstProp\" structure must be > 0")
 #: R/varFunc.R:0
-#, fuzzy
 msgid "constant in \"varConstProp\" structure must be > 0"
-msgstr "stała w strukturze \"varConstPower\" musi być > 0"
+msgstr "stała w strukturze \"varConstProp\" musi być > 0"
 
 # nlme/R/lme.R: 1462
 # stop("covariate must be a data frame")
@@ -1236,7 +1234,6 @@ msgstr "zmienna niezależna musi mieć atrybut poziomu, gdy grupy są obecne"
 
 #. R/corStruct.R: stop("covariate must have unique integer values within groups for \"corARMA\" objects")
 #: R/corStruct.R:0
-#, fuzzy
 msgid "covariate must have unique integer values within groups for \"corARMA\" objects"
 msgstr "zmienna wyjaśniająca musi mieć unikalne wartości w obrębie grup dla obiektów klasy \"corARMA\""
 
@@ -1287,7 +1284,7 @@ msgstr "stopnie swobody oraz wagi muszą mieć tę samą długość"
 #. R/zzMethods.R: warning("deviance undefined for REML fit")
 #: R/zzMethods.R:0
 msgid "deviance undefined for REML fit"
-msgstr ""
+msgstr "odchylenie niezdefiniowane dla dopasowania REML"
 
 # nlme/R/pdMat.R: 109
 # stop("dimnames of 'value' must match or be NULL")
@@ -1421,7 +1418,7 @@ msgstr "'formuła(obiekt)' musi zwracać formułę"
 #. R/nlme.R: stop("formulae in 'fixed' must be of the form \"parameter ~ expr\"")
 #: R/nlme.R:0
 msgid "formulae in 'fixed' must be of the form \"parameter ~ expr\""
-msgstr "formuły w argumencie 'fixed' muszą mieć formę \"parametr ~ wyrażenie\"."
+msgstr "formuły w argumencie 'fixed' muszą mieć formę \"parametr ~ wyrażenie\""
 
 #. R/gnls.R: stop("formulae in 'params' must be of the form \"parameter ~ expr\"")
 #. R/gnls.R: stop("formulae in 'params' must be of the form \"parameter ~ expr\"")
@@ -1464,9 +1461,8 @@ msgstr "ignorowanie argumentu 'nam'"
 # warning("'subset' ignored with single grouping factor")
 #. R/varFunc.R: warning("ignoring initial values (no grouping factor)")
 #: R/varFunc.R:0
-#, fuzzy
 msgid "ignoring initial values (no grouping factor)"
-msgstr "argument 'subset' został zignorowany z jednym czynnikem grupującym"
+msgstr "ignorowanie wartości początkowych (brak czynnika grupującego)"
 
 # nlme/R/nlme.R: 329
 # stop("incompatible formulas for groups in \"random\" and \"correlation\"")
@@ -1969,7 +1965,7 @@ msgstr "brak domyślnej metody dla uzyskania pierwiastka z obiektu klasy \"pdMat
 #. R/newFunc.R: stop("no degrees of freedom for estimating std. dev.")
 #: R/newFunc.R:0
 msgid "no degrees of freedom for estimating std. dev."
-msgstr "brak stopni swobody na potrzeby oszacowania odchylenia standardowego"
+msgstr "brak stopni swobody na potrzeby oszacowania odchylenia standardowego."
 
 # nlme/R/simulate.R: 367
 # stop("no degrees of freedom specified")
@@ -2041,7 +2037,7 @@ msgstr "nieistniejące nazwy grup dla początkowych wartości w 'varIdent'"
 #. R/lmList.R: stop("nonexistent group requested in 'subset'")
 #: R/lmList.R:0
 msgid "nonexistent group requested in 'subset'"
-msgstr "zażądano nieistniejącej grupy w 'subset'."
+msgstr "zażądano nieistniejącej grupy w 'subset'"
 
 # nlme/R/lmList.R: 232
 # stop("nonexistent groups requested in 'subset'")
@@ -2062,18 +2058,17 @@ msgstr "zażądano nieistniejących grup w argumencie 'subset'"
 #. R/zzMethods.R: stop("not (yet) implemented.  Contributions are welcome; use intervals() instead (for now)")
 #: R/zzMethods.R:0
 msgid "not (yet) implemented.  Contributions are welcome; use intervals() instead (for now)"
-msgstr ""
+msgstr "(jeszcze) nie zzaimplementowane.   Wkłady są mile widziane; użyj w zamian 'intervals()' (na razie)"
 
 #. R/VarCov.R: stop("not implemented for \"nlme\" objects")
 #: R/VarCov.R:0
 msgid "not implemented for \"nlme\" objects"
-msgstr "funkcja 'getVarCov.lme()'  nie jest zaimplementowana dla obiektów klasy \"nlme\""
+msgstr "niezaimplementowane dla obiektów klasy \"nlme\""
 
 #. R/VarCov.R: stop("not implemented for correlation structures without a grouping factor")
 #: R/VarCov.R:0
-#, fuzzy
 msgid "not implemented for correlation structures without a grouping factor"
-msgstr "Niezainicjalizowana struktura korelacji klasy %s"
+msgstr "nie zaimplementowano dla struktur korelacji bez współczynnika grupowania"
 
 # nlme/R/VarCov.R: 28
 # stop("'getVarCov.lme()' is not implemented for multiple levels of nesting")
@@ -2084,9 +2079,8 @@ msgstr "funkcja 'getVarCov.lme()' nie jest zaimplementowana dla wielu poziomów 
 
 #. R/VarCov.R: stop("not implemented for uncorrelated errors")
 #: R/VarCov.R:0
-#, fuzzy
 msgid "not implemented for uncorrelated errors"
-msgstr "funkcja 'getVarCov.lme()'  nie jest zaimplementowana dla obiektów klasy \"nlme\""
+msgstr "nie zaimplementowano dla przypadku nieskorelowanych błędów"
 
 # nlme/R/nlme.R: 600
 # stop(gettextf("number of columns in starting values for random component at level %s should be %d", namGrp[i], rlength[i]), domain = "R-nlme")
@@ -2132,15 +2126,14 @@ msgstr "obiekty muszą mieć współczynniki z tymi samymi nazwami wierszy"
 
 #. R/lme.R: gettextf("objects must inherit from classes %s, or %s", paste(head(valid.cl,     -1), collapse = ", "), tail(valid.cl, 1))
 #: R/lme.R:0
-#, fuzzy
 msgid "objects must inherit from classes %s, or %s"
-msgstr "argument 'object' nie jest obiektem klasy \"gls\""
+msgstr "obiekty muszą dziedziczyć z klas %s lub %s"
 
 #. R/gls.R: stop("offset() terms are not supported")
 #. R/lme.R: stop("offset() terms are not supported")
 #: R/gls.R:0 R/lme.R:0
 msgid "offset() terms are not supported"
-msgstr ""
+msgstr "człony 'offset()' nie są obsługiwane"
 
 # nlme/R/nlsList.R: 87
 # stop("old-style self-starting model functions\nare no longer supported.\nNew selfStart functions are available.\nUse\n  SSfpl instead of fpl,\n  SSfol instead of first.order.log,\n  SSbiexp instead of biexp,\n  SSlogis instead of logistic.\nIf writing your own selfStart model, see\n  \"help(selfStart)\"\nfor the new form of the \"initial\" attribute.", domain = "R-nlme")
@@ -2159,16 +2152,17 @@ msgid ""
 "  \"help(selfStart)\"\n"
 "for the new form of the \"initial\" attribute."
 msgstr ""
-"samoinicjujące się funkcje modelu starego stylu nie są już dłużej wspierane\n"
-"Brak dostępnych funkcji 'selfStart'.\n"
+"Funkcje modelu samostartowego starego stylu\n"
+"nie są już obsługiwane.\n"
+"Dostępne są nowe funkcje autostartu.\n"
 "Użyj\n"
-"  'SSfpl' zamiast 'fpl',\n"
-"  'SSfol' zamiast 'first.order.log',\n"
-"  'SSbiexp' zamiast 'biexp',\n"
-"  'SSlogis' zamiast 'logistic'.\n"
-"Jeśli piszesz swój własny model 'selfStart', zobacz\n"
-"  'help(selfStart)'\n"
-"aby uzyskać informację o nowej formie atrybutu 'initial'."
+"  SSfpl zamiast fpl,\n"
+"  SSfol zamiast first.order.log,\n"
+"  SSbiexp zamiast biexp,\n"
+"  SSlogis zamiast logistyki.\n"
+"Jeśli tworzysz własny model selfStart, zobacz\n"
+"  \"help(selfStart)\"\n"
+"dla nowej formy atrybutu \"initial\"."
 
 # nlme/R/groupedData.R: 245
 # stop("only one display level allowed")
@@ -2312,7 +2306,7 @@ msgstr "drugi argument przekazywany do funkcji 'groupedData()' musi dziedziczyć
 #. R/groupedData.R: stop("single group not supported -- use groupedData()")
 #: R/groupedData.R:0
 msgid "single group not supported -- use groupedData()"
-msgstr ""
+msgstr "pojedyncza grupa nie jest obsługiwana -- użyj groupedData()"
 
 # nlme/R/lme.R: 988
 # warning("some fitted objects deleted because response differs from the first model")
@@ -2559,9 +2553,9 @@ msgstr[2] "nieistniejące poziomy %s"
 #: R/gnls.R:0
 msgid "supplied %d starting value, need %d"
 msgid_plural "supplied %d starting values, need %d"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "dostarczono %d wartość początkową, potrzeba %d"
+msgstr[1] "dostarczono %d wartości początkowe, potrzeba %d"
+msgstr[2] "dostarczono %d wartości początkowych, potrzeba %d"
 
 # nlme/R/gls.R: 459
 # stop(sprintf(ngettext(sum(noMatch),

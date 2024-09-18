@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: nlme 3.1-115\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-13 19:57+0200\n"
-"PO-Revision-Date: 2012-05-29 07:55+0100\n"
+"PO-Revision-Date: 2024-09-17 17:39+0200\n"
 "Last-Translator: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language-Team: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language: pl_PL\n"
@@ -11,6 +11,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: corStruct.c:424
 msgid "All parameters must be less than 1 in absolute value"
@@ -36,11 +38,11 @@ msgstr "Osobliwość w 'backsolve' na poziomie %ld, blok %ld"
 #: nlmefit.c:465
 #, c-format
 msgid "Too many parameters for finite-difference Hessian; npar = %d, nTot = %g."
-msgstr ""
+msgstr "Zbyt wiele parametrów dla skończonej różnicy Hessianu; npar = %d, nTot = %g."
 
 #: nlmefit.c:576 nlmefit.c:757
 msgid "Overfitted model!"
-msgstr ""
+msgstr "Przeszacowany model!"
 
 #: nlmefit.c:602
 msgid "analytic gradient is not available with matrix logarithm"
@@ -56,9 +58,9 @@ msgid "Unable to form eigenvalue-eigenvector decomposition [RS(.) ierr = %d]"
 msgstr "Nie można uformować dekompozycji wartość własna-wektor własny [RS(.) ierr = %d]"
 
 #: nlmefit.c:950
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to form Cholesky decomposition: the leading minor of order %d is not pos.def."
-msgstr "Nie można uformować dekompozycji Cholesky'ego"
+msgstr "Nie można utworzyć dekompozycji Cholesky'ego: wiodący minor rzędu %d nie jest dodatnio określony."
 
 #: nlmefit.c:982
 msgid "Haven't written the compound symmetry case for this yet"
