@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nlme 3.1-105\n"
-"POT-Creation-Date: 2024-09-13 20:06\n"
+"POT-Creation-Date: 2025-03-31 10:29\n"
 "PO-Revision-Date: 2013-08-16 18:52-0600\n"
 "Last-Translator: Chel Hee Lee <gnustats@gmail.com>\n"
 "Language-Team: R Development Translation Teams (Korean) <gnustats@korea.gnu.org>\n"
@@ -38,9 +38,184 @@ msgstr "\"corStruct\" 객체는 반드시 \"fixed\" 속성을 가지고 있어�
 msgid "\"pdMat\" element must have a formula"
 msgstr ""
 
-#. R/reStruct.R: stop("\"pdMat\" elements must have a formula")
-#: R/reStruct.R:0
-msgid "\"pdMat\" elements must have a formula"
+msgid "cannot change 'form'"
+msgstr "'form'를 변경할 수 없습니다"
+
+msgid "need data to calculate covariate of \"corStruct\" object"
+msgstr "\"corStruct\" 객체의 공변량을 계산하기 위한 데이터가 필요합니다"
+
+msgid "cannot change the length of the parameter of a \"corSymm\" object"
+msgstr "\"corSymm\" 객체의 파라미터의 길이를 변경할 수 없습니다"
+
+msgid "covariate must have unique values within groups for \"corSymm\" objects"
+msgstr ""
+
+msgid ""
+"unique values of the covariate  for \"corSymm\" objects must be a sequence "
+"of consecutive integers"
+msgstr ""
+
+msgid "initial value for \"corSymm\" parameters of wrong dimension"
+msgstr ""
+
+msgid "initial values for \"corSymm\" must be between -1 and 1"
+msgstr ""
+
+msgid ""
+"initial values for \"corSymm\" do not define a positive-definite correlation "
+"structure"
+msgstr ""
+
+msgid "cannot change the length of the parameter of a \"corNatural\" object"
+msgstr "\"corNatural\" 객체의 파라미터의 길이를 변경할 수 없습니다"
+
+msgid ""
+"covariate must have unique values within groups for \"corNatural\" objects"
+msgstr ""
+
+msgid ""
+"unique values of the covariate for \"corNatural\" objects must be a sequence "
+"of consecutive integers"
+msgstr ""
+
+msgid "initial value for \"corNatural\" parameters of wrong dimension"
+msgstr ""
+
+msgid "initial values for \"corNatural\" must be between -1 and 1"
+msgstr ""
+
+msgid ""
+"initial values for \"corNatural\" do not define a positive-definite "
+"correlation structure"
+msgstr ""
+
+msgid "parameter in AR(1) structure must be between -1 and 1"
+msgstr ""
+
+msgid "'sumLenSq' = %g is too large (larger than maximal integer)"
+msgstr ""
+
+msgid "cannot change the length of the parameter of a \"corAR1\" object"
+msgstr "\"corAR1\" 객체의 파라미터의 길이를 변경할 수 없습니다"
+
+msgid "covariate must have unique values within groups for \"corAR1\" objects"
+msgstr ""
+
+msgid "parameter in CAR(1) structure must be between 0 and 1"
+msgstr ""
+
+msgid "cannot change the length of the parameter of a \"corCAR1\" object"
+msgstr ""
+
+msgid "covariate must have unique values within groups for \"corCAR1\" objects"
+msgstr ""
+
+msgid "autoregressive order must be a non-negative integer"
+msgstr ""
+
+msgid "moving average order must be a non-negative integer"
+msgstr ""
+
+msgid "at least one of 'p' and 'q' must be > 0"
+msgstr ""
+
+msgid "initial value for parameter of wrong length"
+msgstr ""
+
+msgid "parameters in ARMA structure must be < 1 in absolute value"
+msgstr ""
+
+msgid "'object' has not been Initialize()d"
+msgstr "'object'가 초기화 되지 않았습니다"
+
+msgid "cannot change the length of the parameter of a \"corARMA\" object"
+msgstr ""
+
+msgid ""
+"covariate must have unique integer values within groups for \"corARMA\" "
+"objects"
+msgstr ""
+
+msgid "\"corARMA\" order (%g, %g) exceeds maximum lag in data (%g)"
+msgstr ""
+
+msgid "parameter in \"corCompSymm\" structure must be < 1 in absolute value"
+msgstr ""
+
+msgid "cannot change the length of the parameter of a \"corCompSymm\" object"
+msgstr "\"corCompSymm\" 객체의 파라미터의 길이를 변경할 수 없습니다"
+
+msgid "initial value in \"corCompSymm\" must be greater than %s"
+msgstr "\"corCompSymm\" 내의 초기값은 반드시 %s 보다 커야 합니다"
+
+msgid "cannot change the length of the parameter after initialization"
+msgstr "초기화 이후에는 파라미터의 길이를 변경할 수 없습니다"
+
+msgid "need data to calculate covariate"
+msgstr "공변량을 계산할 데이터가 필요합니다"
+
+msgid "cannot have zero distances in \"corSpatial\""
+msgstr ""
+
+msgid "'range' must be > 0 in \"corSpatial\" initial value"
+msgstr ""
+
+msgid "initial value for \"corSpatial\" parameters of wrong dimension"
+msgstr ""
+
+msgid "initial value of nugget ratio must be between 0 and 1"
+msgstr "nugget ratio의 초기값은 반드시 0과 1 사이에 있어야 합니다"
+
+msgid "'range' must be > 0 in \"corLin\" initial value"
+msgstr ""
+
+msgid ""
+"initial value for 'range' less than minimum distance. Setting it to 1.1 * "
+"min(distance)"
+msgstr ""
+
+msgid "initial value for \"corLin\" parameters of wrong dimension"
+msgstr ""
+
+msgid "range must be > 0 in \"corSpher\" initial value"
+msgstr ""
+
+msgid "initial value for \"corSpher\" parameters of wrong dimension"
+msgstr ""
+
+msgid "model must be a formula of the form \"resp ~ pred\""
+msgstr ""
+
+msgid "offset() terms are not supported"
+msgstr ""
+
+msgid "no coefficients to fit"
+msgstr "적합할 계수가 없습니다"
+
+msgid "maximum number of iterations reached without convergence"
+msgstr "수렴하지 않고 지정된 최대 반복수에 도달하였습니다"
+
+msgid "computed \"gls\" fit is singular, rank %s"
+msgstr ""
+
+#, fuzzy
+msgid "object must inherit from class %s"
+msgstr "'object'는 반드시 formula이어야 합니다"
+
+msgid "'Terms' must be between 1 and %d"
+msgstr "'Terms'는 반드시 1과 %d 사이에 있어야 합니다"
+
+msgid "terms can only be integers or characters"
+msgstr ""
+
+msgid "data in %s call must evaluate to a data frame"
+msgstr ""
+
+msgid ""
+"%s without \"primary\" can only be used with fits of \"groupedData\" objects"
+msgstr ""
+
+msgid "only one level allowed for predictions"
 msgstr ""
 
 #. R/gls.R: gettextf("%s and %s must have the same group levels", c1, c2)

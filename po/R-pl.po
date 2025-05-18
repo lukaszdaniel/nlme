@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nlme 3.1-115\n"
 "Report-Msgid-Bugs-To: bugs@r-project.org\n"
-"POT-Creation-Date: 2024-09-13 20:06\n"
-"PO-Revision-Date: 2024-09-17 17:41+0200\n"
+"POT-Creation-Date: 2025-03-31 10:29\n"
+"PO-Revision-Date: 2014-03-25 17:00+0100\n"
 "Last-Translator: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language-Team: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language: pl_PL\n"
@@ -419,8 +419,210 @@ msgstr "funkcja 'nlme.nlsList()' ponownie przedefiniuje argumenty 'fixed', 'data
 msgid "'object' has not been Initialize()d"
 msgstr "argument 'object' nie został zainicjalizowany metodą 'Initialize()'"
 
-#. R/gnls.R: stop("'object' must be a formula")
-#: R/gnls.R:0
+msgid "cannot change the length of the parameter of a \"corARMA\" object"
+msgstr "nie można zmienić długości parametru obiektu klasy \"corARMA\""
+
+#, fuzzy
+msgid ""
+"covariate must have unique integer values within groups for \"corARMA\" "
+"objects"
+msgstr ""
+"zmienna wyjaśniająca musi mieć unikalne wartości w obrębie grup dla obiektów "
+"klasy \"corARMA\""
+
+msgid "\"corARMA\" order (%g, %g) exceeds maximum lag in data (%g)"
+msgstr ""
+
+msgid "parameter in \"corCompSymm\" structure must be < 1 in absolute value"
+msgstr "parametr w strukturze \"corCompSymm\" musi być pomiędzy -1 a 1"
+
+msgid "cannot change the length of the parameter of a \"corCompSymm\" object"
+msgstr "nie można zmienić długości parametru obiektu klasy \"corCompSymm\""
+
+# nlme/R/corStruct.R: 1516
+# stop(sprintf(gettext("initial value in \"corCompSymm\" must be greater than %s", domain = "R-nlme"), attr(object, "inf")), domain = NA)
+msgid "initial value in \"corCompSymm\" must be greater than %s"
+msgstr "początkowa wartość w \"corCompSymm\" musi być większa niż %s"
+
+# nlme/R/corStruct.R: 1851
+# stop("cannot change the length of the parameter after initialization")
+# nlme/R/varFunc.R: 998
+# stop("cannot change the length of the parameter after initialization")
+# nlme/R/pdMat.R: 256
+# stop("cannot change the length of the parameter after initialization")
+msgid "cannot change the length of the parameter after initialization"
+msgstr "nie można zmienić długości parametru po jego zainicjowaniu"
+
+msgid "need data to calculate covariate"
+msgstr ""
+"argument 'data' jest wymagany aby wyliczyć zmienną wyjaśniającą obiektu "
+"klasy \"corSpatial\""
+
+# nlme/R/corStruct.R: 1930
+# stop("cannot have zero distances in \"corSpatial\"")
+msgid "cannot have zero distances in \"corSpatial\""
+msgstr "nie można mieć zerowych odległości w \"corSpatial\""
+
+# nlme/R/corStruct.R: 1948
+# stop("'range' must be > 0 in \"corSpatial\" initial value")
+msgid "'range' must be > 0 in \"corSpatial\" initial value"
+msgstr "argument 'range' musi być > 0 w początkowej wartości \"corSpatial\""
+
+# nlme/R/corStruct.R: 1955
+# stop("initial value for \"corSpatial\" parameters of wrong dimension")
+# nlme/R/corStruct.R: 1963
+# stop("initial value for \"corSpatial\" parameters of wrong dimension")
+msgid "initial value for \"corSpatial\" parameters of wrong dimension"
+msgstr "początkowa wartość parametrów \"corSpatial\" ma niepoprawny wymiar"
+
+# nlme/R/corStruct.R: 1959
+# stop("initial value of nugget ratio must be between 0 and 1")
+# nlme/R/corStruct.R: 2133
+# stop("initial value of nugget ratio must be between 0 and 1")
+# nlme/R/corStruct.R: 2254
+# stop("initial value of nugget ratio must be between 0 and 1")
+msgid "initial value of nugget ratio must be between 0 and 1"
+msgstr "początkowa wartość proporcji samorodka musi być pomiędzy 0 a 1"
+
+# nlme/R/corStruct.R: 1948
+# stop("'range' must be > 0 in \"corSpatial\" initial value")
+msgid "'range' must be > 0 in \"corLin\" initial value"
+msgstr "argument 'range' musi być > 0 w początkowej wartości \"corLin\""
+
+# nlme/R/corStruct.R: 2121
+# warning("initial value for 'range' less than minimum distance. Setting it to 1.1 * min(distance)")
+# nlme/R/corStruct.R: 2242
+# warning("initial value for 'range' less than minimum distance. Setting it to 1.1 * min(distance)")
+msgid ""
+"initial value for 'range' less than minimum distance. Setting it to 1.1 * "
+"min(distance)"
+msgstr ""
+"początkowa wartość 'range' mniejsza niż minimalna odległość. Ustawianie jej "
+"na '1.1 * min(distance)'"
+
+# nlme/R/corStruct.R: 2129
+# stop("initial value for \"corLin\" parameters of wrong dimension")
+# nlme/R/corStruct.R: 2137
+# stop("initial value for \"corLin\" parameters of wrong dimension")
+msgid "initial value for \"corLin\" parameters of wrong dimension"
+msgstr "początkowa wartość parametrów \"corLin\" ma niepoprawny wymiar"
+
+# nlme/R/corStruct.R: 2239
+# stop("range must be > 0 in \"corSpher\" initial value")
+msgid "range must be > 0 in \"corSpher\" initial value"
+msgstr "zakres musi być > 0 w początkowej wartości \"corShere\""
+
+# nlme/R/corStruct.R: 2250
+# stop("initial value for \"corSpher\" parameters of wrong dimension")
+# nlme/R/corStruct.R: 2258
+# stop("initial value for \"corSpher\" parameters of wrong dimension")
+msgid "initial value for \"corSpher\" parameters of wrong dimension"
+msgstr "początkowa wartość parametrów \"corSpher\" ma niepoprawny wymiar"
+
+# nlme/R/gls.R: 48
+# stop("'model' argument must be a formula of the form \"resp ~ pred\"")
+msgid "model must be a formula of the form \"resp ~ pred\""
+msgstr ""
+"argument 'model' musi być formułą o formie \"zmienna zależna ~ zmienna "
+"niezależna\""
+
+msgid "offset() terms are not supported"
+msgstr ""
+
+# nlme/R/gls.R: 93
+# stop("no coefficients to fit")
+msgid "no coefficients to fit"
+msgstr "brak współczynników do dopasowania"
+
+# nlme/R/gls.R: 173
+# stop("maximum number of iterations reached without convergence")
+# nlme/R/gnls.R: 466
+# warning("maximum number of iterations reached without convergence")
+# nlme/R/gnls.R: 469
+# stop("maximum number of iterations reached without convergence")
+# nlme/R/nlme.R: 948
+# warning("maximum number of iterations reached without convergence")
+# nlme/R/nlme.R: 951
+# stop("maximum number of iterations reached without convergence")
+msgid "maximum number of iterations reached without convergence"
+msgstr "maksymalna liczba iteracji została osiągnięta bez uzyskania zbieżności"
+
+# nlme/R/gls.R: 322
+# stop(gettextf("computed \"gls\" fit is singular, rank %s", rnk), domain = "R-nlme")
+msgid "computed \"gls\" fit is singular, rank %s"
+msgstr "obliczone dopasowanie \"gls\" jest osobliwe, ranga %s"
+
+msgid "object must inherit from class %s"
+msgstr "argument 'object' nie jest obiektem klasy %s"
+
+msgid "'Terms' must be between 1 and %d"
+msgstr "argument 'Terms' musi być pomiędzy 1 a %d"
+
+# nlme/R/gls.R: 466
+# stop("terms can only be integers or characters")
+# nlme/R/lme.R: 902
+# stop("terms can only be integers or characters")
+msgid "terms can only be integers or characters"
+msgstr "człony mogą być tylko liczbami całkowitymi lub tekstami"
+
+# nlme/R/gls.R: 541
+# stop(gettextf("data in %s call must evaluate to a data frame", sQuote(substitute(object))), domain = "R-nlme")
+# nlme/R/lme.R: 1084
+# stop(gettextf("data in %s call must evaluate to a data frame", sQuote(substitute(object))), domain = "R-nlme")
+msgid "data in %s call must evaluate to a data frame"
+msgstr "dane w wywołaniu %s muszą wyliczać się do ramki danych"
+
+# nlme/R/gls.R: 545
+# stop(gettextf("%s without \"primary\" can only be used with fits of \"groupedData\" objects", sys.call()[[1L]]), domain = "R-nlme")
+# nlme/R/lme.R: 1088
+# stop(gettextf("%s without \"primary\" can only be used with fits of \"groupedData\" objects", sys.call()[[1L]]), domain = "R-nlme")
+# nlme/R/lmList.R: 117
+# stop(gettextf("%s without \"primary\" can only be used with fits of \"groupedData\" objects", sys.call()[[1]]), domain = "R-nlme")
+msgid ""
+"%s without \"primary\" can only be used with fits of \"groupedData\" objects"
+msgstr ""
+"%s bez \"primary\" może być użyte jedynie z dopasowaniami obiektów "
+"\"groupedData\""
+
+# nlme/R/gls.R: 628
+# stop("only one level allowed for predictions")
+msgid "only one level allowed for predictions"
+msgstr "tylko jeden poziom jest dozwolony dla przewidywań"
+
+# nlme/R/gls.R: 657
+# stop(gettextf("%s and %s must have the same group levels", sQuote(c1), sQuote(c2)), domain = "R-nlme")
+msgid "%s and %s must have the same group levels"
+msgstr "%s oraz %s muszą mieć te same poziomy grup"
+
+# nlme/R/gls.R: 670
+# stop("wrong group levels")
+# nlme/R/gls.R: 684
+# stop("wrong group levels")
+msgid "wrong group levels"
+msgstr "błędne poziomy grupy"
+
+# nlme/R/gls.R: 772
+# stop(gettextf("cannot get confidence intervals on var-cov components: %s", aV), domain = "R-nlme")
+# nlme/R/lme.R: 1302
+# stop(gettextf("cannot get confidence intervals on var-cov components: %s", aV), domain = "R-nlme")
+msgid "cannot get confidence intervals on var-cov components: %s"
+msgstr "nie można uzyskać przedziałów ufności na komponentach var-cov: %s"
+
+# nlme/R/lmList.R: 1443
+# stop("need an object with call component")
+msgid "need an object with call component"
+msgstr "wymagany jest obiekt z komponentem 'call'"
+
+# nlme/R/gls.R: 1217
+# stop("'nint' is not consistent with 'breaks'")
+# nlme/R/lme.R: 2761
+# stop("'nint' is not consistent with 'breaks'")
+msgid "'nint' is not consistent with 'breaks'"
+msgstr "'nint' jest niespójne z 'breaks'"
+
+msgid "Within-group std. dev. must be a positive numeric value"
+msgstr ""
+
 msgid "'object' must be a formula"
 msgstr "argument 'model' nie jest obiektem klasy \"formula\""
 
