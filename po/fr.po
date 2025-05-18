@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nlme 3.1-65\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-13 19:57+0200\n"
+"POT-Creation-Date: 2025-05-18 16:02+0200\n"
 "PO-Revision-Date: 2021-02-06 16:27+0100\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: French <R-core@r-project.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: corStruct.c:424
+#: corStruct.c:427
 msgid "All parameters must be less than 1 in absolute value"
 msgstr "Tous les paramètres doivent être inférieurs à 1 en valeur absolue"
 
-#: corStruct.c:535
+#: corStruct.c:538
 msgid "Coefficient matrix not invertible"
 msgstr "Matrice de coefficient non inversible"
 
-#: corStruct.c:872 corStruct.c:927 corStruct.c:987 corStruct.c:1029
+#: corStruct.c:880 corStruct.c:935 corStruct.c:995 corStruct.c:1037
 msgid "Unknown spatial correlation class"
 msgstr "Classes de corrélation spatiale inconnues"
 
@@ -44,28 +44,28 @@ msgstr "Singularité rencontrée en résolution inverse au niveau %ld, bloc %ld"
 msgid "Too many parameters for finite-difference Hessian; npar = %d, nTot = %g."
 msgstr "Trop de paramètres pour un Hessien de différences finies : par = %d, not = %g."
 
-#: nlmefit.c:576 nlmefit.c:757
+#: nlmefit.c:585 nlmefit.c:766
 msgid "Overfitted model!"
 msgstr "Modèle surajusté !"
 
-#: nlmefit.c:602
+#: nlmefit.c:611
 msgid "analytic gradient is not available with matrix logarithm"
 msgstr "un gradient analytique n'est pas disponible avec une matrice logarithmique"
 
-#: nlmefit.c:625
+#: nlmefit.c:634
 msgid "analytic gradient is not available with compound symmetry"
 msgstr "un gradient analytique n'est pas disponible avec une symétrie composée"
 
-#: nlmefit.c:918
+#: nlmefit.c:927
 #, c-format
 msgid "Unable to form eigenvalue-eigenvector decomposition [RS(.) ierr = %d]"
 msgstr "Incapable de former la décomposition valeurs propres - vecteurs propres [RS(.) ierr = %d]"
 
-#: nlmefit.c:950
+#: nlmefit.c:959
 #, c-format
 msgid "Unable to form Cholesky decomposition: the leading minor of order %d is not pos.def."
 msgstr "Incapable de former la décomposition de Cholesky : le premier mineur d’ordre %d n’est pas pos.def."
 
-#: nlmefit.c:982
+#: nlmefit.c:991
 msgid "Haven't written the compound symmetry case for this yet"
 msgstr "Les cas de symétrie composée n'ont pas encore été écrits"

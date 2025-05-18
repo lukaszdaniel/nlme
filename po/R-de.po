@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 4.5.0\n"
 "Report-Msgid-Bugs-To: bugs@r-project.org\n"
-"POT-Creation-Date: 2025-03-31 10:29\n"
+"POT-Creation-Date: 2025-05-18 13:38\n"
 "PO-Revision-Date: 2025-03-18 11:20+0100\n"
 "Last-Translator: Detlef Steuer <steuer@hsu-hh.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -15,20 +15,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "not implemented for \"nlme\" objects"
-msgstr "nicht für \"nlme\"-Objekte implementiert"
-
-msgid "not implemented for multiple levels of nesting"
-msgstr "nicht für mehrstufige Schachtelung implementiert"
-
-msgid "individual %s was not used in the fit"
-msgstr "Individuum %s wurde in der Anpassung nicht benutzt."
-
-msgid "not implemented for uncorrelated errors"
-msgstr "für unkorrelierte Fehler nicht implementiert"
-
-msgid "not implemented for correlation structures without a grouping factor"
-msgstr "für Korrelationsstruktur ohne Gruppierungsfaktor nicht implementiert"
+#. R/corStruct.R: gettextf("\"corARMA\" order (%g, %g) exceeds maximum lag in data (%g)",     p, q, maxLag)
+#: R/corStruct.R:0
+msgid "\"corARMA\" order (%g, %g) exceeds maximum lag in data (%g)"
+msgstr ""
 
 #. R/corStruct.R: stop("\"corStruct\" object must have a \"fixed\" attribute")
 #: R/corStruct.R:0
@@ -40,236 +30,11 @@ msgstr "\"corStruct\"-Objekt muss ein \"fixed\"-Attribut haben."
 msgid "\"pdMat\" element must have a formula"
 msgstr "\"pdMat\"-Element muss eine Formel haben."
 
-msgid "cannot change the length of the parameter of a \"corStruct\" object"
-msgstr ""
-"Die Länge des Parameters eines \"corStruct\"-Objekts kann nicht geändert "
-"werden."
-
-msgid ""
-"'sumLenSq := sum(table(groups)^2)' = %g is too large.\n"
-" Too large or no groups in your correlation structure?"
-msgstr ""
-"'sumLenSq := sum(table(groups)^2)' = %g ist zu groß.\n"
-" Zu große oder keine Gruppen in der Korrelationsstrujtur? "
-
-msgid "cannot change 'form'"
-msgstr "'form' kann nicht geändert werden."
-
-msgid "need data to calculate covariate of \"corStruct\" object"
-msgstr ""
-"Zur Berechnung der Kovariate des \"corStruct\"-Objekts werden Daten benötigt."
-
-msgid "cannot change the length of the parameter of a \"corSymm\" object"
-msgstr ""
-"Die Länge des Parameters eines \"corSymm\"-Objekts kann nicht geändert "
-"werden."
-
-# http://www.sozpsy.uni-hannover.de/marienthal/glossar/html/k37.htm
-msgid "covariate must have unique values within groups for \"corSymm\" objects"
-msgstr ""
-"Kovariate muss eindeutige Werte innerhalb der Gruppen für \"corSymm\"-"
-"Objekte haben."
-
-msgid ""
-"unique values of the covariate  for \"corSymm\" objects must be a sequence "
-"of consecutive integers"
-msgstr ""
-"Eindeutige Werte der Kovariate für \"corSymm\"-Objekte müssen eine\n"
-"Sequenz von aufeinander folgenden ganzen Zahlen sein."
-
-msgid "initial value for \"corSymm\" parameters of wrong dimension"
-msgstr "Anfangswert für \"corSymm\"-Parameter hat falsche Dimension"
-
-msgid "initial values for \"corSymm\" must be between -1 and 1"
-msgstr "Anfangswerte für \"corSymm\" müssen zwischen -1 und 1 liegen."
-
-msgid ""
-"initial values for \"corSymm\" do not define a positive-definite correlation "
-"structure"
-msgstr ""
-"Anfangswerte für \"corSymm\" definieren keine positiv-definite "
-"Korrelationsstruktur."
-
-msgid "cannot change the length of the parameter of a \"corNatural\" object"
-msgstr ""
-"Die Länge des Parameters eines \"corNatural\"-Objekts kann nicht geändert "
-"werden."
-
-msgid ""
-"covariate must have unique values within groups for \"corNatural\" objects"
-msgstr ""
-"Kovariate muss eindeutige Werte innerhalb der Gruppen für \"corNatural-"
-"Objekte\" haben."
-
-msgid ""
-"unique values of the covariate for \"corNatural\" objects must be a sequence "
-"of consecutive integers"
-msgstr ""
-"Eindeutige Werte der Kovariate für \"corNatural\"-Objekte müssen eine\n"
-"Sequenz von aufeinanderfolgenden ganzen Zahlen sein"
-
-msgid "initial value for \"corNatural\" parameters of wrong dimension"
-msgstr "Anfangswert für \"corNatural\"-Parameter hat falsche Dimension"
-
-msgid "initial values for \"corNatural\" must be between -1 and 1"
-msgstr "Anfangswerte für \"corNatural\" müssen zwischen -1 und 1 liegen."
-
-msgid ""
-"initial values for \"corNatural\" do not define a positive-definite "
-"correlation structure"
-msgstr ""
-"Anfangswerte für \"corNatural\" definieren keine positiv-definite "
-"Korrelationsstruktur."
-
-msgid "parameter in AR(1) structure must be between -1 and 1"
-msgstr "Parameter in AR(1)-Struktur muss zwischen -1 und 1 liegen"
-
-msgid "'sumLenSq' = %g is too large (larger than maximal integer)"
-msgstr "'sumLenSq' = %g ist zu groß (größer als maximale Integerzahl)"
-
-msgid "cannot change the length of the parameter of a \"corAR1\" object"
-msgstr ""
-"Die Länge des Parameters eines \"corAR1\"-Objekts kann nicht geändert werden."
-
-# http://www.sozpsy.uni-hannover.de/marienthal/glossar/html/k37.htm
-msgid "covariate must have unique values within groups for \"corAR1\" objects"
-msgstr ""
-"Kovariate muss eindeutige Werte innerhalb der Gruppen für \"corAR1-Objekte\" "
-"haben."
-
-msgid "parameter in CAR(1) structure must be between 0 and 1"
-msgstr "Parameter in CAR(1)-Struktur muss zwischen 0 und 1 liegen."
-
-msgid "cannot change the length of the parameter of a \"corCAR1\" object"
-msgstr ""
-"Die Länge des Parameters eines \"corCAR1\"-Objekts kann nicht geändert "
-"werden."
-
-# http://www.sozpsy.uni-hannover.de/marienthal/glossar/html/k37.htm
-msgid "covariate must have unique values within groups for \"corCAR1\" objects"
-msgstr ""
-"Kovariate muss eindeutige Werte innerhalb der Gruppen für \"corCAR1-"
-"Objekte\" haben."
-
-msgid "autoregressive order must be a non-negative integer"
-msgstr "Autoregressive Ordnung muss eine nicht-negative Ganzzahl sein."
-
-msgid "moving average order must be a non-negative integer"
-msgstr ""
-"Ordnung des gleitenden Durchschnitts muss eine nicht-negative Ganzzahl sein."
-
-msgid "at least one of 'p' and 'q' must be > 0"
-msgstr "'p' oder 'q' muss > 0 sein"
-
-msgid "initial value for parameter of wrong length"
-msgstr "Anfangswerte für Parameter hat falsche Länge"
-
-msgid "parameters in ARMA structure must be < 1 in absolute value"
-msgstr "Parameter in ARMA-Struktur müssen vom Betrag < 1 sein."
-
-msgid "'object' has not been Initialize()d"
-msgstr "Initialize() wurde nicht für »object« ausgeführt"
-
-msgid "cannot change the length of the parameter of a \"corARMA\" object"
-msgstr ""
-"Die Länge des Parameters eines \"corARMA\"-Objekts kann nicht geändert "
-"werden."
-
-# http://www.sozpsy.uni-hannover.de/marienthal/glossar/html/k37.htm
-msgid ""
-"covariate must have unique integer values within groups for \"corARMA\" "
-"objects"
-msgstr ""
-"Kovariate muss eindeutige ganzzahlige Werte innerhalb der Gruppen für \"corARMA-"
-"Objekte\" haben."
-
-msgid "\"corARMA\" order (%g, %g) exceeds maximum lag in data (%g)"
-msgstr ""
-
-msgid "parameter in \"corCompSymm\" structure must be < 1 in absolute value"
-msgstr "Parameter in \"corCompSymm\"-Struktur muss vom Betrag < 1 sein."
-
-msgid "cannot change the length of the parameter of a \"corCompSymm\" object"
-msgstr ""
-"Die Länge des Parameters eines \"corCompSymm\"-Objekts kann nicht geändert "
-"werden."
-
-msgid "initial value in \"corCompSymm\" must be greater than %s"
-msgstr "Anfangswert in \"corCompSymm\" muss größer als %s sein."
-
-msgid "cannot change the length of the parameter after initialization"
-msgstr ""
-"Länge des Parameters kann nach der Initialisierung nicht geändert werden."
-
-msgid "need data to calculate covariate"
-msgstr "Um Kovariate zu berechnen, werden Daten benötigt."
-
-msgid "cannot have zero distances in \"corSpatial\""
-msgstr "Es darf keine Null-Distanzen in \"corSpatial\" geben"
-
-msgid "'range' must be > 0 in \"corSpatial\" initial value"
-msgstr "'range' muss im \"corSpatial\"-Anfangswert > 0 sein."
-
-msgid "initial value for \"corSpatial\" parameters of wrong dimension"
-msgstr "Anfangswert des Parameters \"corSpatial\" hat falsche Dimension"
-
-msgid "initial value of nugget ratio must be between 0 and 1"
-msgstr "Anfangswert des Nugget-Anteils muss zwischen 0 und 1 liegen"
-
-msgid "'range' must be > 0 in \"corLin\" initial value"
-msgstr "'range' im \"corLin\"-Anfangswert muss > 0 sein"
-
-msgid ""
-"initial value for 'range' less than minimum distance. Setting it to 1.1 * "
-"min(distance)"
-msgstr ""
-"Anfangswert für 'range' kleiner als minimale Distanz. Er wird auf 1.1 * min "
-"(distance) gesetzt."
-
-msgid "initial value for \"corLin\" parameters of wrong dimension"
-msgstr "Anfangswert für Parameter \"corLin\" hat falsche Dimension."
-
-msgid "range must be > 0 in \"corSpher\" initial value"
-msgstr "Spannweite im \"corSpher\"-Anfangswert muss > 0 sein."
-
-msgid "initial value for \"corSpher\" parameters of wrong dimension"
-msgstr "Anfangswert für Parameter \"corSpher\" hat falsche Dimension"
-
-msgid "model must be a formula of the form \"resp ~ pred\""
-msgstr "Modell muss eine Formel der Form \"resp ~ pred\" sein."
-
-msgid "offset() terms are not supported"
-msgstr "offset() Terme sind nicht unterstützt"
-
-msgid "no coefficients to fit"
-msgstr "keine Koeffizienten anzupassen"
-
-msgid "maximum number of iterations reached without convergence"
-msgstr "maximale Anzahl der Iterationen ohne Konvergenz erreicht"
-
-msgid "computed \"gls\" fit is singular, rank %s"
-msgstr "errechneter \"gls\"-Fit ist singulär, Rang %s"
-
-msgid "object must inherit from class %s"
-msgstr "Objekt muss von der Klasse %s erben"
-
-msgid "'Terms' must be between 1 and %d"
-msgstr "'Terms' müssen zwischen 1 und %d liegen."
-
-msgid "terms can only be integers or characters"
-msgstr "Terme können nur Ganzzahlen oder Zeichen sein"
-
-msgid "data in %s call must evaluate to a data frame"
-msgstr "Daten im %s-Aufruf müssen einen Dataframe ergeben"
-
-msgid ""
-"%s without \"primary\" can only be used with fits of \"groupedData\" objects"
-msgstr ""
-"%s ohne \"primary\" kann nur für Anpassungen von \"groupedData\"-Objekten "
-"genutzt werden."
-
-msgid "only one level allowed for predictions"
-msgstr "nur eine Stufe für Vorhersagen erlaubt"
+#. R/reStruct.R: stop("\"pdMat\" elements must have a formula")
+#: R/reStruct.R:0
+#, fuzzy
+msgid "\"pdMat\" elements must have a formula"
+msgstr "\"pdMat\"-Element muss eine Formel haben."
 
 #. R/gls.R: gettextf("%s and %s must have the same group levels", c1, c2)
 #: R/gls.R:0
@@ -1166,9 +931,8 @@ msgstr "Kovariate muss ein Stufenattribut haben, wenn Gruppen vorhanden sind"
 # http://www.sozpsy.uni-hannover.de/marienthal/glossar/html/k37.htm
 #. R/corStruct.R: stop("covariate must have unique integer values within groups for \"corARMA\" objects")
 #: R/corStruct.R:0
-#, fuzzy
 msgid "covariate must have unique integer values within groups for \"corARMA\" objects"
-msgstr "Kovariate muss eindeutige Werte innerhalb der Gruppen für \"corARMA-Objekte\" haben."
+msgstr "Kovariate muss eindeutige ganzzahlige Werte innerhalb der Gruppen für \"corARMA-Objekte\" haben."
 
 # http://www.sozpsy.uni-hannover.de/marienthal/glossar/html/k37.htm
 #. R/corStruct.R: stop("covariate must have unique values within groups for \"corAR1\" objects")
@@ -1784,7 +1548,7 @@ msgstr "nicht für \"nlme\"-Objekte implementiert"
 #. R/VarCov.R: stop("not implemented for correlation structures without a grouping factor")
 #: R/VarCov.R:0
 msgid "not implemented for correlation structures without a grouping factor"
-msgstr ""
+msgstr "für Korrelationsstruktur ohne Gruppierungsfaktor nicht implementiert"
 
 #. R/VarCov.R: stop("not implemented for multiple levels of nesting")
 #: R/VarCov.R:0
@@ -1793,9 +1557,8 @@ msgstr "nicht für mehrstufige Schachtelung implementiert"
 
 #. R/VarCov.R: stop("not implemented for uncorrelated errors")
 #: R/VarCov.R:0
-#, fuzzy
 msgid "not implemented for uncorrelated errors"
-msgstr "nicht für \"nlme\"-Objekte implementiert"
+msgstr "für unkorrelierte Fehler nicht implementiert"
 
 #. R/nlme.R: gettextf("number of columns in starting values for random component at level %s should be %d",     namGrp[i], rlength[i])
 #: R/nlme.R:0
@@ -1840,7 +1603,7 @@ msgstr "Objekte müssen von den Klassen %s oder %s erben"
 #. R/lme.R: stop("offset() terms are not supported")
 #: R/gls.R:0 R/lme.R:0
 msgid "offset() terms are not supported"
-msgstr ""
+msgstr "offset() Terme sind nicht unterstützt"
 
 #. R/nlsList.R: stop("old-style self-starting model functions\nare no longer supported.\nNew selfStart functions are available.\nUse\n  SSfpl instead of fpl,\n  SSfol instead of first.order.log,\n  SSbiexp instead of biexp,\n  SSlogis instead of logistic.\nIf writing your own selfStart model, see\n  \"help(selfStart)\"\nfor the new form of the \"initial\" attribute.")
 #: R/nlsList.R:0
@@ -2061,196 +1824,10 @@ msgstr ""
 msgid "wrong group levels"
 msgstr "falsche Gruppenstufen"
 
-msgid "do not know how to get coefficients for %s object"
-msgstr "nicht bekannt, wie Koeffizienten erlangt werden für %s-Objekt"
-
-msgid "cannot change the length of covariate in \"varFunc\" object"
+#. R/pdMat.R: stop("x-y data to splom got botched somehow")
+#: R/pdMat.R:0
+msgid "x-y data to splom got botched somehow"
 msgstr ""
-"Die Länge der Kovariate im \"varFunc\"-Objekt kann nicht geändert werden."
-
-msgid "'value' must be a one sided formula"
-msgstr "'value' muss eine einseitige Formel sein."
-
-msgid "'form' must have a covariate"
-msgstr "'form' muss eine Kovariate haben."
-
-msgid "ignoring 'group' in \"varFixed\" formula"
-msgstr "'group' in \"varFixed\"-Formel wird ignoriert."
-
-msgid "all variables used in 'formula' must be in 'data'"
-msgstr "Alle in 'formula' benutzten Variablen müssen in 'data' enthalten sein."
-
-msgid "ignoring initial values (no grouping factor)"
-msgstr "Startwerte werden ignoriert (kein Gruppierungsfaktor)"
-
-msgid "initial values must have group names in 'varIdent'"
-msgstr "Startwerte müssen Gruppennamen in 'varIdent' haben."
-
-msgid "initial values for 'varIdent' must be > 0"
-msgstr "Startwerte für 'varIdent' müssen > 0 sein."
-
-msgid "fixed parameters must have names in 'varIdent'"
-msgstr "Feste Parameter müssen in 'varIdent' Namen haben."
-
-msgid ""
-"cannot change the length of the \"varIdent\" parameter after initialization"
-msgstr ""
-"Länge des Parameters \"varIdent\" kann nach der Initialisierung nicht mehr "
-"geändert werden."
-
-msgid "fixed parameter names in 'varIdent' must be a subset of group names"
-msgstr ""
-"Feste Parameternamen in 'varIdent' müssen eine Teilmenge von Gruppennamen "
-"sein."
-
-msgid "cannot fix variances in all groups"
-msgstr "Varianzen können nicht in allen Gruppen festgehalten werden."
-
-msgid "initial value for \"varIdent\" should be of length %d"
-msgstr "Startwert von \"varIndent\" sollte die Länge %d haben."
-
-msgid ""
-"names of starting value for \"varIdent\" object must contain all but one of "
-"the stratum levels"
-msgstr ""
-"Die Namen des Startwerts für ein \"varIdent\"-Objekt müssen alles außer "
-"einer Schichtstufe enthalten."
-
-msgid "nonexistent group names for initial values in 'varIdent'"
-msgstr "nicht existente Gruppennamen für Startwerte in 'varIdent'"
-
-msgid "initial values must have group names in 'varPower'"
-msgstr "Anfangswerte müssen Gruppennamen in 'varPower' haben."
-
-msgid "fixed parameters must have group names in 'varPower'"
-msgstr "Feste Parameter müssen Gruppennamen in 'varPower' haben."
-
-msgid ""
-"cannot change the length of the \"varStruct\" parameter after initialization"
-msgstr ""
-"Länge des Parameters \"varStruct\" kann nach der Initialisierung nicht "
-"geändert werden."
-
-msgid ""
-"cannot change coefficients before initialization or when all parameters are "
-"fixed"
-msgstr ""
-"Koeffizienten können nicht vor der Initialisierung oder wenn alle Parameter "
-"fest sind geändert werden."
-
-msgid "fixed parameters must have group names"
-msgstr "Feste Parameter müssen Gruppennamen haben."
-
-msgid "mismatch between group names and fixed values names"
-msgstr "keine Übereinstimmung zwischen Gruppennamen und festen Wertnamen"
-
-msgid "initial value for \"varPower\" should be of length %d"
-msgstr "Startwert von \"varPower\" sollte Länge %d haben."
-
-msgid "nonexistent group names for initial values in \"varPower\""
-msgstr "nicht existierende Gruppennamen für Anfangswerte in \"varPower\""
-
-msgid "initial value for \"varPower\" should be of length 1"
-msgstr "Anfangswert für \"varPower\" sollte die Länge 1 haben."
-
-msgid "initial values must have group names in 'varExp'"
-msgstr "Anfangswerte müssen Gruppennamen in 'varExp' haben."
-
-msgid "fixed parameters must have group names in 'varExp'"
-msgstr "Feste Parameter müssen Gruppennamen in 'varExp' haben."
-
-msgid ""
-"cannot change the length of the \"varExp\" parameter after initialization"
-msgstr ""
-"Länge des Parameters \"varExp\" kann nach der Initialisierung nicht geändert "
-"werden."
-
-msgid "initial value for \"varExp\" should be of length %d"
-msgstr "Startwert von \"varExp\" sollte Länge %d haben."
-
-msgid "nonexistent group names for initial values in \"varExp\""
-msgstr "nicht existente Gruppennamen für Anfangswerte in \"varExp\""
-
-msgid "initial value for \"varExp\" should be of length 1"
-msgstr "Anfangswert für \"varExp\" sollte die Länge 1 haben."
-
-msgid "%s can have at most two components"
-msgstr "%s kann höchstens zwei Komponenten haben."
-
-msgid "%s can only have names \"const\" and \"power\""
-msgstr "%s kann nur die Namen \"const\" und \"power\" haben."
-
-msgid "%s can only be a list or numeric"
-msgstr "%s kann nur eine Liste oder numerisch sein."
-
-msgid "%s must have group names in 'varConstPower'"
-msgstr "%s muss Gruppennamen in 'varConstPower' haben."
-
-msgid "constant in \"varConstProp\" structure must be > 0"
-msgstr "Konstante in \"varConstPower\"-Struktur muss > 0 sein."
-
-msgid "initial value should be of length %d"
-msgstr "Startwert sollte Länge %d haben."
-
-msgid "nonexistent group names for initial values"
-msgstr "Nicht existierende Gruppenamen für Startwerte"
-
-msgid "%s can only have names \"const\" and \"prop\""
-msgstr "%s kann nur die Namen \"const\" und \"power\" haben."
-
-msgid "%s must have group names in 'varConstProp'"
-msgstr "%s muss Gruppennamen in 'varConstPower' haben."
-
-msgid "all arguments to 'varComb' must be of class \"varFunc\"."
-msgstr "Alle Argumente für 'varComb' müssen von der Klasse \"varFunc\" sein."
-
-msgid "cannot change parameter length of initialized \"varComb\" object"
-msgstr ""
-"Parameterlänge eines initialisierten \"varComb\"-Objekts kann nicht geändert "
-"werden"
-
-msgid "deviance undefined for REML fit"
-msgstr "Devianz für REML Anpassung nicht definiert"
-
-msgid "AIC undefined for REML fit"
-msgstr "AIC für REML Anpassung nicht definiert"
-
-msgid ""
-"not (yet) implemented.  Contributions are welcome; use intervals() instead "
-"(for now)"
-msgstr ""
-"(nocht) nicht implementiert.  Beiträge sind willkommen; Für den Moment "
-"stattdessen intervals() nutzen"
-
-msgid "term %s not matched"
-msgid_plural "terms %s not matched"
-msgstr[0] "Term %s nicht übereinstimmend"
-msgstr[1] "Terme %s nicht übereinstimmend"
-
-msgid "'L' must have at most %d column"
-msgid_plural "'L' must have at most %d columns"
-msgstr[0] "'L' muss zumindest %d Spalte haben:"
-msgstr[1] "'L' muss zumindest %d Spalten haben:"
-
-msgid "effect %s not matched"
-msgid_plural "effects %s not matched"
-msgstr[0] "Effekt %s nicht übereinstimmend"
-msgstr[1] "Effekte %s nicht übereinstimmend"
-
-msgid "supplied %d starting value, need %d"
-msgid_plural "supplied %d starting values, need %d"
-msgstr[0] "%d Startwert angegeben, brauche %d"
-msgstr[1] "%d Startwerte angegeben, brauche %d"
-
-msgid "%s not found in data"
-msgid_plural "%s not found in data"
-msgstr[0] "%s nicht in Daten gefunden"
-msgstr[1] "%s nicht in Daten gefunden"
-
-msgid "nonexistent level %s"
-msgid_plural "nonexistent levels %s"
-msgstr[0] "nicht existierende Stufe %s"
-msgstr[1] "nicht existierende Stufen %s"
 
 #. R/lme.R: ngettext(sum(whichNA), "%s not available for plotting", "%s not available for plotting",     domain = "R-nlme")
 #. R/lme.R: ngettext(sum(whichNA), "%s not available for plotting", "%s not available for plotting",     domain = "R-nlme")
@@ -2315,8 +1892,8 @@ msgstr[1] "nicht existierende Stufen %s"
 #: R/gnls.R:0
 msgid "supplied %d starting value, need %d"
 msgid_plural "supplied %d starting values, need %d"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d Startwert angegeben, brauche %d"
+msgstr[1] "%d Startwerte angegeben, brauche %d"
 
 #. R/gls.R: ngettext(sum(noMatch), "term %s not matched", "terms %s not matched",     domain = "R-nlme")
 #. R/lme.R: ngettext(sum(noMatch), "term %s not matched", "terms %s not matched",     domain = "R-nlme")
