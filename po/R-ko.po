@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nlme 3.1-105\n"
-"POT-Creation-Date: 2025-05-18 13:38\n"
+"POT-Creation-Date: 2025-06-05 16:22\n"
 "PO-Revision-Date: 2013-08-16 18:52-0600\n"
 "Last-Translator: Chel Hee Lee <gnustats@gmail.com>\n"
 "Language-Team: R Development Translation Teams (Korean) <gnustats@korea.gnu.org>\n"
@@ -50,12 +50,10 @@ msgid "%s and %s must have the same group levels"
 msgstr "%s와 %s은 반드시 같은 그룹 수준들을 가져야 합니다"
 
 #. R/varFunc.R: gettextf("%s can have at most two components", nam)
-#. R/varFunc.R: gettextf("%s can have at most two components", nam)
 #: R/varFunc.R:0
 msgid "%s can have at most two components"
 msgstr ""
 
-#. R/varFunc.R: gettextf("%s can only be a list or numeric", nam)
 #. R/varFunc.R: gettextf("%s can only be a list or numeric", nam)
 #: R/varFunc.R:0
 msgid "%s can only be a list or numeric"
@@ -202,14 +200,8 @@ msgid "'form' can only be a formula, or a list of formulas"
 msgstr ""
 
 #. R/lmList.R: stop("'form' must be a formula")
-#. R/lmList.R: stop("'form' must be a formula")
-#. R/lmList.R: stop("'form' must be a formula")
-#. R/lme.R: stop("'form' must be a formula")
 #. R/lme.R: stop("'form' must be a formula")
 #. R/newFunc.R: stop("'form' must be a formula")
-#. R/newFunc.R: stop("'form' must be a formula")
-#. R/newMethods.R: stop("'form' must be a formula")
-#. R/newMethods.R: stop("'form' must be a formula")
 #. R/newMethods.R: stop("'form' must be a formula")
 #: R/lmList.R:0 R/lme.R:0 R/newFunc.R:0 R/newMethods.R:0
 msgid "'form' must be a formula"
@@ -238,10 +230,6 @@ msgid "'form' must be a two-sided formula"
 msgstr ""
 
 #. R/varFunc.R: stop("'form' must have a covariate")
-#. R/varFunc.R: stop("'form' must have a covariate")
-#. R/varFunc.R: stop("'form' must have a covariate")
-#. R/varFunc.R: stop("'form' must have a covariate")
-#. R/varFunc.R: stop("'form' must have a covariate")
 #: R/varFunc.R:0
 msgid "'form' must have a covariate"
 msgstr ""
@@ -257,51 +245,28 @@ msgid "'form' not consistent with 'nam'"
 msgstr ""
 
 #. R/lmList.R: stop("'id' can only be a formula or numeric")
-#. R/lmList.R: stop("'id' can only be a formula or numeric")
-#. R/lmList.R: stop("'id' can only be a formula or numeric")
-#. R/lmList.R: stop("'id' can only be a formula or numeric")
 #. R/lme.R: stop("'id' can only be a formula or numeric")
-#. R/lme.R: stop("'id' can only be a formula or numeric")
-#. R/lme.R: stop("'id' can only be a formula or numeric")
-#. R/newMethods.R: stop("'id' can only be a formula or numeric")
 #. R/newMethods.R: stop("'id' can only be a formula or numeric")
 #: R/lmList.R:0 R/lme.R:0 R/newMethods.R:0
 msgid "'id' can only be a formula or numeric"
 msgstr ""
 
 #. R/lmList.R: stop("'id' must be between 0 and 1")
-#. R/lmList.R: stop("'id' must be between 0 and 1")
-#. R/lmList.R: stop("'id' must be between 0 and 1")
-#. R/lmList.R: stop("'id' must be between 0 and 1")
 #. R/lme.R: stop("'id' must be between 0 and 1")
-#. R/lme.R: stop("'id' must be between 0 and 1")
-#. R/newMethods.R: stop("'id' must be between 0 and 1")
 #. R/newMethods.R: stop("'id' must be between 0 and 1")
 #: R/lmList.R:0 R/lme.R:0 R/newMethods.R:0
 msgid "'id' must be between 0 and 1"
 msgstr "'id'는 반드시 0과 1 사이에 있어야 합니다"
 
 #. R/lmList.R: stop("'idLabels' can only be a formula or a vector")
-#. R/lmList.R: stop("'idLabels' can only be a formula or a vector")
-#. R/lmList.R: stop("'idLabels' can only be a formula or a vector")
-#. R/lmList.R: stop("'idLabels' can only be a formula or a vector")
 #. R/lme.R: stop("'idLabels' can only be a formula or a vector")
-#. R/lme.R: stop("'idLabels' can only be a formula or a vector")
-#. R/lme.R: stop("'idLabels' can only be a formula or a vector")
-#. R/newMethods.R: stop("'idLabels' can only be a formula or a vector")
 #. R/newMethods.R: stop("'idLabels' can only be a formula or a vector")
 #: R/lmList.R:0 R/lme.R:0 R/newMethods.R:0
 msgid "'idLabels' can only be a formula or a vector"
 msgstr ""
 
 #. R/lmList.R: stop("'idLabels' of incorrect length")
-#. R/lmList.R: stop("'idLabels' of incorrect length")
-#. R/lmList.R: stop("'idLabels' of incorrect length")
-#. R/lmList.R: stop("'idLabels' of incorrect length")
 #. R/lme.R: stop("'idLabels' of incorrect length")
-#. R/lme.R: stop("'idLabels' of incorrect length")
-#. R/lme.R: stop("'idLabels' of incorrect length")
-#. R/newMethods.R: stop("'idLabels' of incorrect length")
 #. R/newMethods.R: stop("'idLabels' of incorrect length")
 #: R/lmList.R:0 R/lme.R:0 R/newMethods.R:0
 msgid "'idLabels' of incorrect length"
@@ -338,9 +303,6 @@ msgstr ""
 msgid "'nlme.nlsList' will redefine 'fixed', 'data', and 'start'"
 msgstr ""
 
-#. R/corStruct.R: stop("'object' has not been Initialize()d")
-#. R/corStruct.R: stop("'object' has not been Initialize()d")
-#. R/corStruct.R: stop("'object' has not been Initialize()d")
 #. R/corStruct.R: stop("'object' has not been Initialize()d")
 #: R/corStruct.R:0
 msgid "'object' has not been Initialize()d"
@@ -396,7 +358,6 @@ msgstr ""
 msgid "'start' must have a component called 'fixed'"
 msgstr ""
 
-#. R/lmList.R: stop("'subset' can only be character or integer")
 #. R/lmList.R: stop("'subset' can only be character or integer")
 #: R/lmList.R:0
 msgid "'subset' can only be character or integer"
@@ -555,10 +516,6 @@ msgid "an object of length %d does not match a Cholesky factor"
 msgstr ""
 
 #. R/pdMat.R: gettextf("an object of length %d does not match the required parameter size",     length(val))
-#. R/pdMat.R: gettextf("an object of length %d does not match the required parameter size",     length(val))
-#. R/pdMat.R: gettextf("an object of length %d does not match the required parameter size",     length(val))
-#. R/pdMat.R: gettextf("an object of length %d does not match the required parameter size",     length(val))
-#. R/pdMat.R: gettextf("an object of length %d does not match the required parameter size",     length(val))
 #: R/pdMat.R:0
 msgid "an object of length %d does not match the required parameter size"
 msgstr ""
@@ -594,7 +551,6 @@ msgid "can only construct \"varFunc\" object from another \"varFunc\" object, a 
 msgstr ""
 
 #. R/lme.R: stop("can only fit \"lmList\" objects with single grouping variable")
-#. R/lme.R: stop("can only fit \"lmList\" objects with single grouping variable")
 #: R/lme.R:0
 msgid "can only fit \"lmList\" objects with single grouping variable"
 msgstr ""
@@ -605,16 +561,11 @@ msgid "can only fit \"nlsList\" objects with single grouping variable"
 msgstr ""
 
 #. R/pdMat.R: stop("cannot access the matrix of object without names")
-#. R/pdMat.R: stop("cannot access the matrix of object without names")
 #: R/pdMat.R:0
 msgid "cannot access the matrix of object without names"
 msgstr ""
 
 #. R/pdMat.R: stop("cannot access the matrix of uninitialized objects")
-#. R/pdMat.R: stop("cannot access the matrix of uninitialized objects")
-#. R/pdMat.R: stop("cannot access the matrix of uninitialized objects")
-#. R/pdMat.R: stop("cannot access the matrix of uninitialized objects")
-#. R/reStruct.R: stop("cannot access the matrix of uninitialized objects")
 #. R/reStruct.R: stop("cannot access the matrix of uninitialized objects")
 #: R/pdMat.R:0 R/reStruct.R:0
 msgid "cannot access the matrix of uninitialized objects"
@@ -635,9 +586,6 @@ msgstr ""
 msgid "cannot change 'form'"
 msgstr "'form'를 변경할 수 없습니다"
 
-#. R/varFunc.R: stop("cannot change coefficients before initialization or when all parameters are fixed")
-#. R/varFunc.R: stop("cannot change coefficients before initialization or when all parameters are fixed")
-#. R/varFunc.R: stop("cannot change coefficients before initialization or when all parameters are fixed")
 #. R/varFunc.R: stop("cannot change coefficients before initialization or when all parameters are fixed")
 #: R/varFunc.R:0
 msgid "cannot change coefficients before initialization or when all parameters are fixed"
@@ -690,7 +638,6 @@ msgstr ""
 
 #. R/corStruct.R: stop("cannot change the length of the parameter after initialization")
 #. R/pdMat.R: stop("cannot change the length of the parameter after initialization")
-#. R/varFunc.R: stop("cannot change the length of the parameter after initialization")
 #. R/varFunc.R: stop("cannot change the length of the parameter after initialization")
 #: R/corStruct.R:0 R/pdMat.R:0 R/varFunc.R:0
 msgid "cannot change the length of the parameter after initialization"
@@ -760,7 +707,6 @@ msgid "cannot extract groups formula without a formula"
 msgstr ""
 
 #. R/pdMat.R: stop("cannot extract matrix from an uninitialized object")
-#. R/pdMat.R: stop("cannot extract matrix from an uninitialized object")
 #: R/pdMat.R:0
 msgid "cannot extract matrix from an uninitialized object"
 msgstr ""
@@ -776,33 +722,25 @@ msgid "cannot extract parameters of uninitialized object"
 msgstr ""
 
 #. R/pdMat.R: stop("cannot extract the dimensions")
-#. R/pdMat.R: stop("cannot extract the dimensions")
 #: R/pdMat.R:0
 msgid "cannot extract the dimensions"
 msgstr ""
 
-#. R/pdMat.R: stop("cannot extract the inverse from an uninitialized object")
-#. R/pdMat.R: stop("cannot extract the inverse from an uninitialized object")
 #. R/pdMat.R: stop("cannot extract the inverse from an uninitialized object")
 #: R/pdMat.R:0
 msgid "cannot extract the inverse from an uninitialized object"
 msgstr ""
 
 #. R/pdMat.R: stop("cannot extract the log of the determinant from an uninitialized object")
-#. R/pdMat.R: stop("cannot extract the log of the determinant from an uninitialized object")
-#. R/pdMat.R: stop("cannot extract the log of the determinant from an uninitialized object")
-#. R/pdMat.R: stop("cannot extract the log of the determinant from an uninitialized object")
 #: R/pdMat.R:0
 msgid "cannot extract the log of the determinant from an uninitialized object"
 msgstr ""
 
 #. R/pdMat.R: stop("cannot extract the matrix from an uninitialized \"pdCompSymm\" object")
-#. R/pdMat.R: stop("cannot extract the matrix from an uninitialized \"pdCompSymm\" object")
 #: R/pdMat.R:0
 msgid "cannot extract the matrix from an uninitialized \"pdCompSymm\" object"
 msgstr ""
 
-#. R/pdMat.R: stop("cannot extract the matrix from an uninitialized \"pdIdent\" object")
 #. R/pdMat.R: stop("cannot extract the matrix from an uninitialized \"pdIdent\" object")
 #: R/pdMat.R:0
 msgid "cannot extract the matrix from an uninitialized \"pdIdent\" object"
@@ -813,9 +751,6 @@ msgstr ""
 msgid "cannot extract the matrix from an uninitialized object"
 msgstr ""
 
-#. R/pdMat.R: stop("cannot extract the matrix with uninitialized dimensions")
-#. R/pdMat.R: stop("cannot extract the matrix with uninitialized dimensions")
-#. R/pdMat.R: stop("cannot extract the matrix with uninitialized dimensions")
 #. R/pdMat.R: stop("cannot extract the matrix with uninitialized dimensions")
 #: R/pdMat.R:0
 msgid "cannot extract the matrix with uninitialized dimensions"
@@ -839,14 +774,10 @@ msgid ""
 msgstr ""
 
 #. R/pdMat.R: stop("cannot get the inverse of an uninitialized object")
-#. R/pdMat.R: stop("cannot get the inverse of an uninitialized object")
-#. R/pdMat.R: stop("cannot get the inverse of an uninitialized object")
-#. R/pdMat.R: stop("cannot get the inverse of an uninitialized object")
 #: R/pdMat.R:0
 msgid "cannot get the inverse of an uninitialized object"
 msgstr ""
 
-#. R/pdMat.R: stop("cannot have duplicated column names in a \"pdMat\" object")
 #. R/pdMat.R: stop("cannot have duplicated column names in a \"pdMat\" object")
 #: R/pdMat.R:0
 msgid "cannot have duplicated column names in a \"pdMat\" object"
@@ -892,7 +823,6 @@ msgstr ""
 msgid "computed \"gls\" fit is singular, rank %s"
 msgstr ""
 
-#. R/varFunc.R: stop("constant in \"varConstProp\" structure must be > 0")
 #. R/varFunc.R: stop("constant in \"varConstProp\" structure must be > 0")
 #: R/varFunc.R:0
 msgid "constant in \"varConstProp\" structure must be > 0"
@@ -1038,9 +968,6 @@ msgid "fixed parameter names in 'varIdent' must be a subset of group names"
 msgstr ""
 
 #. R/varFunc.R: stop("fixed parameters must have group names")
-#. R/varFunc.R: stop("fixed parameters must have group names")
-#. R/varFunc.R: stop("fixed parameters must have group names")
-#. R/varFunc.R: stop("fixed parameters must have group names")
 #: R/varFunc.R:0
 msgid "fixed parameters must have group names"
 msgstr ""
@@ -1072,18 +999,15 @@ msgid "formula(object) must return a formula"
 msgstr ""
 
 #. R/nlme.R: stop("formulae in 'fixed' must be of the form \"parameter ~ expr\"")
-#. R/nlme.R: stop("formulae in 'fixed' must be of the form \"parameter ~ expr\"")
 #: R/nlme.R:0
 msgid "formulae in 'fixed' must be of the form \"parameter ~ expr\""
 msgstr ""
 
 #. R/gnls.R: stop("formulae in 'params' must be of the form \"parameter ~ expr\"")
-#. R/gnls.R: stop("formulae in 'params' must be of the form \"parameter ~ expr\"")
 #: R/gnls.R:0
 msgid "formulae in 'params' must be of the form \"parameter ~ expr\""
 msgstr ""
 
-#. R/nlme.R: stop("formulae in 'random' must be of the form \"parameter ~ expr\"")
 #. R/nlme.R: stop("formulae in 'random' must be of the form \"parameter ~ expr\"")
 #: R/nlme.R:0
 msgid "formulae in 'random' must be of the form \"parameter ~ expr\""
@@ -1100,7 +1024,6 @@ msgid "ignoring 'group' in \"varFixed\" formula"
 msgstr ""
 
 #. R/pdMat.R: warning("ignoring argument 'form'")
-#. R/pdMat.R: warning("ignoring argument 'form'")
 #: R/pdMat.R:0
 msgid "ignoring argument 'form'"
 msgstr ""
@@ -1116,12 +1039,10 @@ msgid "ignoring initial values (no grouping factor)"
 msgstr ""
 
 #. R/nlme.R: stop("incompatible formulas for groups in \"random\" and \"correlation\"")
-#. R/nlme.R: stop("incompatible formulas for groups in \"random\" and \"correlation\"")
 #: R/nlme.R:0
 msgid "incompatible formulas for groups in \"random\" and \"correlation\""
 msgstr ""
 
-#. R/lme.R: stop("incompatible formulas for groups in 'random' and 'correlation'")
 #. R/lme.R: stop("incompatible formulas for groups in 'random' and 'correlation'")
 #: R/lme.R:0
 msgid "incompatible formulas for groups in 'random' and 'correlation'"
@@ -1146,7 +1067,6 @@ msgid "individual %s was not used in the fit"
 msgstr ""
 
 #. R/corStruct.R: stop("initial value for \"corLin\" parameters of wrong dimension")
-#. R/corStruct.R: stop("initial value for \"corLin\" parameters of wrong dimension")
 #: R/corStruct.R:0
 msgid "initial value for \"corLin\" parameters of wrong dimension"
 msgstr ""
@@ -1157,12 +1077,10 @@ msgid "initial value for \"corNatural\" parameters of wrong dimension"
 msgstr ""
 
 #. R/corStruct.R: stop("initial value for \"corSpatial\" parameters of wrong dimension")
-#. R/corStruct.R: stop("initial value for \"corSpatial\" parameters of wrong dimension")
 #: R/corStruct.R:0
 msgid "initial value for \"corSpatial\" parameters of wrong dimension"
 msgstr ""
 
-#. R/corStruct.R: stop("initial value for \"corSpher\" parameters of wrong dimension")
 #. R/corStruct.R: stop("initial value for \"corSpher\" parameters of wrong dimension")
 #: R/corStruct.R:0
 msgid "initial value for \"corSpher\" parameters of wrong dimension"
@@ -1204,7 +1122,6 @@ msgid "initial value for \"varPower\" should be of length 1"
 msgstr ""
 
 #. R/corStruct.R: warning("initial value for 'range' less than minimum distance. Setting it to 1.1 * min(distance)")
-#. R/corStruct.R: warning("initial value for 'range' less than minimum distance. Setting it to 1.1 * min(distance)")
 #: R/corStruct.R:0
 msgid "initial value for 'range' less than minimum distance. Setting it to 1.1 * min(distance)"
 msgstr ""
@@ -1225,14 +1142,10 @@ msgid "initial value in \"corCompSymm\" must be greater than %s"
 msgstr "\"corCompSymm\" 내의 초기값은 반드시 %s 보다 커야 합니다"
 
 #. R/corStruct.R: stop("initial value of nugget ratio must be between 0 and 1")
-#. R/corStruct.R: stop("initial value of nugget ratio must be between 0 and 1")
-#. R/corStruct.R: stop("initial value of nugget ratio must be between 0 and 1")
 #: R/corStruct.R:0
 msgid "initial value of nugget ratio must be between 0 and 1"
 msgstr "nugget ratio의 초기값은 반드시 0과 1 사이에 있어야 합니다"
 
-#. R/varFunc.R: gettext("initial value should be of length %d", nStratVar)
-#. R/varFunc.R: gettext("initial value should be of length %d", aux)
 #. R/varFunc.R: gettext("initial value should be of length %d", nStratVar)
 #. R/varFunc.R: gettext("initial value should be of length %d", aux)
 #: R/varFunc.R:0
@@ -1295,7 +1208,6 @@ msgid "length of 'nam' not consistent with dimensions of initial value"
 msgstr ""
 
 #. R/newMethods.R: gettextf("level of %s does not match formula %s", level[aux],     sQuote(deparse(form)))
-#. R/newMethods.R: gettextf("level of %s does not match formula %s", level[aux],     sQuote(deparse(form)))
 #: R/newMethods.R:0
 msgid "level of %s does not match formula %s"
 msgstr ""
@@ -1328,9 +1240,6 @@ msgid "maximum number of iterations reached without convergence"
 msgstr "수렴하지 않고 지정된 최대 반복수에 도달하였습니다"
 
 #. R/varFunc.R: stop("mismatch between group names and fixed values names")
-#. R/varFunc.R: stop("mismatch between group names and fixed values names")
-#. R/varFunc.R: stop("mismatch between group names and fixed values names")
-#. R/varFunc.R: stop("mismatch between group names and fixed values names")
 #: R/varFunc.R:0
 msgid "mismatch between group names and fixed values names"
 msgstr ""
@@ -1351,7 +1260,6 @@ msgid "model must be a formula of the form \"resp ~ pred\""
 msgstr ""
 
 #. R/simulate.R: stop("models with \"corStruct\" and/or \"varFunc\" objects not allowed")
-#. R/simulate.R: stop("models with \"corStruct\" and/or \"varFunc\" objects not allowed")
 #: R/simulate.R:0
 msgid "models with \"corStruct\" and/or \"varFunc\" objects not allowed"
 msgstr ""
@@ -1366,7 +1274,6 @@ msgstr ""
 msgid "moving average order must be a non-negative integer"
 msgstr ""
 
-#. R/lmList.R: stop("multiple levels not allowed")
 #. R/lmList.R: stop("multiple levels not allowed")
 #. R/nlsList.R: stop("multiple levels not allowed")
 #: R/lmList.R:0 R/nlsList.R:0
@@ -1493,7 +1400,6 @@ msgid "nonexistent group in 'newdata'"
 msgstr ""
 
 #. R/varFunc.R: stop("nonexistent group names for initial values")
-#. R/varFunc.R: stop("nonexistent group names for initial values")
 #: R/varFunc.R:0
 msgid "nonexistent group names for initial values"
 msgstr ""
@@ -1518,9 +1424,6 @@ msgstr ""
 msgid "nonexistent group requested in 'subset'"
 msgstr ""
 
-#. R/lmList.R: stop("nonexistent groups requested in 'subset'")
-#. R/lmList.R: stop("nonexistent groups requested in 'subset'")
-#. R/lmList.R: stop("nonexistent groups requested in 'subset'")
 #. R/lmList.R: stop("nonexistent groups requested in 'subset'")
 #: R/lmList.R:0
 msgid "nonexistent groups requested in 'subset'"
@@ -1569,7 +1472,6 @@ msgstr ""
 
 #. R/gls.R: gettextf("object must inherit from class %s", "\"gls\"")
 #. R/lme.R: gettextf("object must inherit from class %s", "\"lme\"")
-#. R/newFunc.R: gettextf("object must inherit from class %s", "\"data.frame\"")
 #. R/newFunc.R: gettextf("object must inherit from class %s", "\"data.frame\"")
 #. R/newFunc.R: gettextf("object must inherit from class %s", "\"lmList\"")
 #: R/gls.R:0 R/lme.R:0 R/newFunc.R:0
@@ -1656,7 +1558,6 @@ msgid "only single effects allowed in left side of 'form'"
 msgstr ""
 
 #. R/lme.R: stop("only single level allowed")
-#. R/lme.R: stop("only single level allowed")
 #: R/lme.R:0
 msgid "only single level allowed"
 msgstr ""
@@ -1687,7 +1588,6 @@ msgid "parameters in ARMA structure must be < 1 in absolute value"
 msgstr ""
 
 #. R/simulate.R: stop("plot method only implemented for comparing models")
-#. R/simulate.R: stop("plot method only implemented for comparing models")
 #: R/simulate.R:0
 msgid "plot method only implemented for comparing models"
 msgstr ""
@@ -1698,8 +1598,6 @@ msgid "range must be > 0 in \"corSpher\" initial value"
 msgstr ""
 
 #. R/groupedData.R: stop("right-hand side of first argument must be a conditional expression")
-#. R/groupedData.R: stop("right-hand side of first argument must be a conditional expression")
-#. R/groupedData.R: stop("right-hand side of first argument must be a conditional expression")
 #: R/groupedData.R:0
 msgid "right-hand side of first argument must be a conditional expression"
 msgstr ""
@@ -1709,7 +1607,6 @@ msgstr ""
 msgid "second argument must be a groupedData object"
 msgstr ""
 
-#. R/groupedData.R: stop("second argument to 'groupedData' must inherit from data.frame")
 #. R/groupedData.R: stop("second argument to 'groupedData' must inherit from data.frame")
 #: R/groupedData.R:0
 msgid "second argument to 'groupedData' must inherit from data.frame"
@@ -1797,7 +1694,6 @@ msgid "unique values of the covariate for \"corNatural\" objects must be a seque
 msgstr ""
 
 #. R/gls.R: stop("wrong group levels")
-#. R/gls.R: stop("wrong group levels")
 #: R/gls.R:0
 msgid "wrong group levels"
 msgstr ""
@@ -1808,7 +1704,6 @@ msgid "x-y data to splom got botched somehow"
 msgstr ""
 
 #. R/lme.R: ngettext(sum(whichNA), "%s not available for plotting", "%s not available for plotting",     domain = "R-nlme")
-#. R/lme.R: ngettext(sum(whichNA), "%s not available for plotting", "%s not available for plotting",     domain = "R-nlme")
 #: R/lme.R:0
 msgid "%s not available for plotting"
 msgid_plural "%s not available for plotting"
@@ -1816,11 +1711,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. R/lmList.R: ngettext(sum(naV), "%s not found in data", "%s not found in data")
-#. R/lmList.R: ngettext(sum(naV), "%s not found in data", "%s not found in data")
-#. R/lmList.R: ngettext(sum(naV), "%s not found in data", "%s not found in data")
 #. R/lme.R: ngettext(sum(naV), "%s not found in data", "%s not found in data")
-#. R/lme.R: ngettext(sum(naV), "%s not found in data", "%s not found in data")
-#. R/newMethods.R: ngettext(sum(naV), "%s not found in data", "%s not found in data")
 #. R/newMethods.R: ngettext(sum(naV), "%s not found in data", "%s not found in data")
 #: R/lmList.R:0 R/lme.R:0 R/newMethods.R:0
 msgid "%s not found in data"
@@ -1857,7 +1748,6 @@ msgid_plural "group names not matched in starting values for random effects: %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#. R/lme.R: ngettext(sum(aux), "nonexistent level %s", "nonexistent levels %s")
 #. R/lme.R: ngettext(sum(aux), "nonexistent level %s", "nonexistent levels %s")
 #: R/lme.R:0
 msgid "nonexistent level %s"
