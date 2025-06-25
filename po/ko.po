@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nlme 3.1-105\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-18 16:02+0200\n"
+"POT-Creation-Date: 2025-06-23 16:34+0200\n"
 "PO-Revision-Date: 2013-08-16 18:27-0600\n"
 "Last-Translator: Chel Hee Lee <gnustats@gmail.com>\n"
 "Language-Team: R Development Translation Teams (Korean) <gnustats@korea.gnu.org>\n"
@@ -36,7 +36,7 @@ msgstr "가역적이지 않은 계수행렬입니다"
 msgid "Unknown spatial correlation class"
 msgstr "알 수 없는 spatial correlation 클래스입니다"
 
-#: nlme.c:469
+#: nlme.c:456
 msgid "First observation on an individual must have a dose"
 msgstr "개인의 첫번째 관측값은 반드시 dose 이어야 합니다"
 

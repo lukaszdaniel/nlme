@@ -115,7 +115,7 @@ msgstr "argument 'Terms' musi być pomiędzy 1 a %d"
 #. R/groupedData.R: stop("'asTable' can only be used with balanced 'groupedData' objects")
 #: R/groupedData.R:0
 msgid "'asTable' can only be used with balanced 'groupedData' objects"
-msgstr "funkcja 'asTable()' może być użyta jedynie ze zbalansowanymi obiektami klasy \"groupedData\""
+msgstr "funkcja 'asTable()' może być użyta jedynie ze zrównoważonymi obiektami klasy \"groupedData\""
 
 #. R/groupedData.R: stop("'asTable' cannot be used with multilevel grouped data")
 #: R/groupedData.R:0
@@ -160,7 +160,7 @@ msgstr "argument 'data' musi być obiektem klasy \"groupedData\" jeśli argument
 #. R/newMethods.R: stop("'distance' and 'object' have incompatible lengths")
 #: R/newMethods.R:0
 msgid "'distance' and 'object' have incompatible lengths"
-msgstr "argumenty 'distance' oraz 'object' mają niespójne długości"
+msgstr "argumenty 'distance' oraz 'object' mają niezgodne długości"
 
 #. R/nlme.R: stop("'fixed' must be a formula or list of formulae")
 #: R/nlme.R:0
@@ -299,7 +299,7 @@ msgstr "funkcja 'nlme.nlsList()' ponownie przedefiniuje argumenty 'fixed', 'data
 #. R/corStruct.R: stop("'object' has not been Initialize()d")
 #: R/corStruct.R:0
 msgid "'object' has not been Initialize()d"
-msgstr "argument 'object' nie został zainicjalizowany metodą 'Initialize()'"
+msgstr "argument 'object' nie został zainicjowany metodą 'Initialize()'"
 
 #. R/gnls.R: stop("'object' must be a formula")
 #: R/gnls.R:0
@@ -359,7 +359,7 @@ msgstr "argument 'subset' może być jedynie znakiem lub liczbą całkowitą"
 #. R/groupedData.R: warning("'subset' ignored with single grouping factor")
 #: R/groupedData.R:0
 msgid "'subset' ignored with single grouping factor"
-msgstr "argument 'subset' został zignorowany z jednym czynnikem grupującym"
+msgstr "argument 'subset' został zignorowany z jednym czynnikiem grupującym"
 
 #. R/groupedData.R: stop("'subset' must be a list")
 #: R/groupedData.R:0
@@ -564,12 +564,12 @@ msgstr "nie można uzyskać dostępu do macierzy obiektu bez nazw"
 #. R/reStruct.R: stop("cannot access the matrix of uninitialized objects")
 #: R/pdMat.R:0 R/reStruct.R:0
 msgid "cannot access the matrix of uninitialized objects"
-msgstr "nie można uzyskać dostępu do macierzy niezainicjalizowanych obiektów"
+msgstr "nie można uzyskać dostępu do macierzy niezainicjowanych obiektów"
 
 #. R/pdMat.R: stop("cannot access the number of columns of uninitialized objects without names")
 #: R/pdMat.R:0
 msgid "cannot access the number of columns of uninitialized objects without names"
-msgstr "nie można uzyskać liczby kolumn niezainicjalizowanych obiektów bez nazw"
+msgstr "nie można uzyskać liczby kolumn niezainicjowanych obiektów bez nazw"
 
 #. R/gnls.R: stop("cannot calculate REML log-likelihood for \"gnls\" objects")
 #: R/gnls.R:0
@@ -589,7 +589,7 @@ msgstr "nie można zmienić współczynników przed zainicjowaniem lub gdy wszys
 #. R/pdMat.R: stop("cannot change dimensions on an initialized \"pdMat\" object")
 #: R/pdMat.R:0
 msgid "cannot change dimensions on an initialized \"pdMat\" object"
-msgstr "nie można zmienić wymiarów zainicjalizowanego obiektu klasy \"pdMat\""
+msgstr "nie można zmienić wymiarów zainicjowanego obiektu klasy \"pdMat\""
 
 #. R/pdMat.R: stop("cannot change parameter length of initialized \"pdMat\" object")
 #: R/pdMat.R:0
@@ -599,7 +599,7 @@ msgstr "nie można zmienić długości parametru zainicjowanego obiektu klasy \"
 #. R/varFunc.R: stop("cannot change parameter length of initialized \"varComb\" object")
 #: R/varFunc.R:0
 msgid "cannot change parameter length of initialized \"varComb\" object"
-msgstr "nie można zmienić długości parametru zainicjalizowanego obiektu \"varComb\""
+msgstr "nie można zmienić długości parametru zainicjowanego obiektu \"varComb\""
 
 #. R/reStruct.R: stop("cannot change parameter length of initialized objects")
 #: R/reStruct.R:0
@@ -704,7 +704,7 @@ msgstr "nie można wyodrębnić formuł grup bez formuły"
 #. R/pdMat.R: stop("cannot extract matrix from an uninitialized object")
 #: R/pdMat.R:0
 msgid "cannot extract matrix from an uninitialized object"
-msgstr "nie można wyodrębnić macierzy z niezainicjalizowanego obiektu"
+msgstr "nie można wyodrębnić macierzy z niezainicjowanego obiektu"
 
 #. R/reStruct.R: stop("cannot extract model matrix without formula")
 #: R/reStruct.R:0
@@ -724,32 +724,32 @@ msgstr "nie można wyodrębnić wymiarów"
 #. R/pdMat.R: stop("cannot extract the inverse from an uninitialized object")
 #: R/pdMat.R:0
 msgid "cannot extract the inverse from an uninitialized object"
-msgstr "nie można wyodrębnić odwrotności z niezainicjalizowanego obiektu"
+msgstr "nie można wyodrębnić odwrotności z niezainicjowanego obiektu"
 
 #. R/pdMat.R: stop("cannot extract the log of the determinant from an uninitialized object")
 #: R/pdMat.R:0
 msgid "cannot extract the log of the determinant from an uninitialized object"
-msgstr "nie można wyodrębnić logarytmu macierzy z niezainicjalizowanego obiektu"
+msgstr "nie można wyodrębnić logarytmu macierzy z niezainicjowanego obiektu"
 
 #. R/pdMat.R: stop("cannot extract the matrix from an uninitialized \"pdCompSymm\" object")
 #: R/pdMat.R:0
 msgid "cannot extract the matrix from an uninitialized \"pdCompSymm\" object"
-msgstr "nie można wyodrębnić macierzy z niezainicjalizowanego obiektu klasy \"pdCompSymm\""
+msgstr "nie można wyodrębnić macierzy z niezainicjowanego obiektu klasy \"pdCompSymm\""
 
 #. R/pdMat.R: stop("cannot extract the matrix from an uninitialized \"pdIdent\" object")
 #: R/pdMat.R:0
 msgid "cannot extract the matrix from an uninitialized \"pdIdent\" object"
-msgstr "nie można wyodrębnić macierzy z niezainicjalizowanego obiektu klasy \"pdIdent\""
+msgstr "nie można wyodrębnić macierzy z niezainicjowanego obiektu klasy \"pdIdent\""
 
 #. R/pdMat.R: stop("cannot extract the matrix from an uninitialized object")
 #: R/pdMat.R:0
 msgid "cannot extract the matrix from an uninitialized object"
-msgstr "nie można wyodrębnić macierzy z niezainicjalizowanego obiektu"
+msgstr "nie można wyodrębnić macierzy z niezainicjowanego obiektu"
 
 #. R/pdMat.R: stop("cannot extract the matrix with uninitialized dimensions")
 #: R/pdMat.R:0
 msgid "cannot extract the matrix with uninitialized dimensions"
-msgstr "nie można wyodrębnić macierzy z niezainicjalizowanymi wymiarami"
+msgstr "nie można wyodrębnić macierzy z niezainicjowanymi wymiarami"
 
 #. R/varFunc.R: stop("cannot fix variances in all groups")
 #: R/varFunc.R:0
@@ -773,7 +773,7 @@ msgstr ""
 #. R/pdMat.R: stop("cannot get the inverse of an uninitialized object")
 #: R/pdMat.R:0
 msgid "cannot get the inverse of an uninitialized object"
-msgstr "nie można uzyskać odwrotności niezainicjalizowanego obiektu"
+msgstr "nie można uzyskać odwrotności niezainicjowanego obiektu"
 
 #. R/pdMat.R: stop("cannot have duplicated column names in a \"pdMat\" object")
 #: R/pdMat.R:0
@@ -788,7 +788,7 @@ msgstr "nie można mieć zerowych odległości w \"corSpatial\""
 #. R/pdMat.R: stop("cannot obtain constrained coefficients with uninitialized dimensions")
 #: R/pdMat.R:0
 msgid "cannot obtain constrained coefficients with uninitialized dimensions"
-msgstr "nie można uzyskać ograniczonych współczynników z niezainicjalizowanych wymiarów"
+msgstr "nie można uzyskać ograniczonych współczynników z niezainicjowanych wymiarów"
 
 #. R/newFunc.R: stop("cannot omit grouping factor without 'form'")
 #: R/newFunc.R:0
@@ -1152,7 +1152,7 @@ msgstr "początkowa wartość powinna być długości %d"
 #. R/corStruct.R: stop("initial values for \"corNatural\" do not define a positive-definite correlation structure")
 #: R/corStruct.R:0
 msgid "initial values for \"corNatural\" do not define a positive-definite correlation structure"
-msgstr "początkowe wartości dla \"corNatural\" nie definiują dodatnio określonej strukture korelacji"
+msgstr "początkowe wartości dla \"corNatural\" nie definiują dodatnio określonej struktury korelacji"
 
 #. R/corStruct.R: stop("initial values for \"corNatural\" must be between -1 and 1")
 #: R/corStruct.R:0
@@ -1192,7 +1192,7 @@ msgstr "początkowe wartości muszą posiadać nazwy grup w 'varPower'"
 #. R/pdMat.R: warning("initializing \"pdCompSymm\" object is not positive definite")
 #: R/pdMat.R:0
 msgid "initializing \"pdCompSymm\" object is not positive definite"
-msgstr "inicjalizowany obiekt klasy \"pdCompSymm\" nie jest dodatnio określony"
+msgstr "inicjowany obiekt klasy \"pdCompSymm\" nie jest dodatnio określony"
 
 #. R/newMethods.R: stop("invalid formula for groups")
 #: R/newMethods.R:0
@@ -1278,17 +1278,17 @@ msgstr "wielokrotne poziomy nie są dozwolone"
 #. R/pdMat.R: stop("must give names when initializing \"pdCompSymm\" from parameter without a formula")
 #: R/pdMat.R:0
 msgid "must give names when initializing \"pdCompSymm\" from parameter without a formula"
-msgstr "nazwy są wymagane podczas inicjalizowania obiektu klasy \"pdCompSymm\" z parametru bez formuły"
+msgstr "nazwy są wymagane gdy występuje inicjowanie obiektu klasy \"pdCompSymm\" z parametru bez formuły"
 
 #. R/pdMat.R: stop("must give names when initializing \"pdIdent\" from parameter without a formula")
 #: R/pdMat.R:0
 msgid "must give names when initializing \"pdIdent\" from parameter without a formula"
-msgstr "nazwy są wymagane gdy występuje inicjalizowanie obiektu klasy \"pdIdent\" z parametru bez formuły"
+msgstr "nazwy są wymagane gdy występuje inicjowanie obiektu klasy \"pdIdent\" z parametru bez formuły"
 
 #. R/pdMat.R: stop("must give names when initializing from matrix or parameter")
 #: R/pdMat.R:0
 msgid "must give names when initializing from matrix or parameter"
-msgstr "nazwy są wymagane, gdy następuje inicjowanie z macierzy lub parametru"
+msgstr "nazwy są wymagane, gdy występuje inicjowanie z macierzy lub parametru"
 
 #. R/pdMat.R: stop("must have formula when no names are given")
 #: R/pdMat.R:0
@@ -1372,7 +1372,7 @@ msgstr "nie określono stopni swobody"
 #. R/lme.R: stop("no effects allowed in right side of formula")
 #: R/lme.R:0
 msgid "no effects allowed in right side of formula"
-msgstr "nie są dozwolone żadne efekty po prawej stronie fomuły"
+msgstr "nie są dozwolone żadne efekty po prawej stronie formuły"
 
 #. R/lme.R: stop("no fitted \"lme\" object")
 #: R/lme.R:0
@@ -1427,7 +1427,7 @@ msgstr "zażądano nieistniejących grup w argumencie 'subset'"
 #. R/zzMethods.R: stop("not (yet) implemented.  Contributions are welcome; use intervals() instead (for now)")
 #: R/zzMethods.R:0
 msgid "not (yet) implemented.  Contributions are welcome; use intervals() instead (for now)"
-msgstr "(jeszcze) nie zzaimplementowane.   Wkłady są mile widziane; użyj w zamian 'intervals()' (na razie)"
+msgstr "(jeszcze) niezaimplementowane.   Wkłady są mile widziane; użyj w zamian 'intervals()' (na razie)"
 
 #. R/VarCov.R: stop("not implemented for \"nlme\" objects")
 #: R/VarCov.R:0
@@ -1508,7 +1508,7 @@ msgid ""
 "  \"help(selfStart)\"\n"
 "for the new form of the \"initial\" attribute."
 msgstr ""
-"Funkcje modelu samostartowego starego stylu\n"
+"Funkcje modelu samostartującego starego stylu\n"
 "nie są już obsługiwane.\n"
 "Dostępne są nowe funkcje autostartu.\n"
 "Użyj\n"
@@ -1705,7 +1705,7 @@ msgstr "błędne poziomy grupy"
 #. R/pdMat.R: stop("x-y data to splom got botched somehow")
 #: R/pdMat.R:0
 msgid "x-y data to splom got botched somehow"
-msgstr "dane x-y przekazywane do funkcji 'splom()' zostały jakoś uszkodzone"
+msgstr "dane x-y przekazywane do funkcji 'splom()' zostały w jakiś sposób uszkodzone"
 
 #. R/lme.R: ngettext(sum(whichNA), "%s not available for plotting", "%s not available for plotting",     domain = "R-nlme")
 #: R/lme.R:0
@@ -2133,7 +2133,7 @@ msgstr[2] "człony %s nie zostały dopasowane"
 #~ msgstr "Struktura złożona:"
 
 #~ msgid "cannot extract the matrix from an uninitialized object of class %s"
-#~ msgstr "nie można wyodrębnić macierzy z niezainicjalizowanego obiektu klasy %s"
+#~ msgstr "nie można wyodrębnić macierzy z niezainicjowanego obiektu klasy %s"
 
 #~ msgid "cannot change parameter length of initialized object of class %s"
 #~ msgstr "nie można zmienić długości parametru zainicjowanych obiektów klasy %s"

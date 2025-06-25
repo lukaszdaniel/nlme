@@ -50,8 +50,7 @@ typedef struct nlme_struct {	/* Nonlinear mixed-effects structure */
 
 double sqrt_eps = 0.0;
 
-static int *
-make_sequential(int *dest, int *src, int n)
+static int *make_sequential(int *dest, int *src, int n)
 {
     /*  copy the pattern from src to dest */
     /*  but in sequential values starting */
@@ -67,8 +66,7 @@ make_sequential(int *dest, int *src, int n)
     return ret;
 }
 
-static nlmePtr
-nlme_init(double *ptheta, double *pDmHalf, int *pgroups, int *pdims,
+static nlmePtr nlme_init(double *ptheta, double *pDmHalf, int *pgroups, int *pdims,
 	  int *pdClass, double *pcorFactor, double *pvarWeights,
 	  int *pcorDims, double *additional, int *pcorOpt, int *pvarOpt,
 	  // 17-11-2015; Fixed sigma patch; E van Willigen; Quantitative Solutions
@@ -114,8 +112,7 @@ nlme_init(double *ptheta, double *pDmHalf, int *pgroups, int *pdims,
     return(nlme);
 }
 
-static void
-nlmeFree(nlmePtr nlme)
+static void nlmeFree(nlmePtr nlme)
 {
     R_Free(nlme->newtheta);
     R_Free(nlme->incr);
@@ -126,16 +123,15 @@ nlmeFree(nlmePtr nlme)
     R_Free(nlme);
 }
 
-static void			/* undo changes in dd from internal_decomp */
-restore_dims(nlmePtr nlme)
+/* undo changes in dd from internal_decomp */
+static void restore_dims(nlmePtr nlme)
 {
     nlme->dd->ZXrows = nlme->dd->N;
     Memcpy(nlme->dd->ZXoff[0], nlme->ZXoff, nlme->ngrpTot);
     Memcpy(nlme->dd->ZXlen[0], nlme->ZXlen, nlme->ngrpTot);
 }
 
-static void
-nlme_wtCorrAdj(nlmePtr nlme)
+static void nlme_wtCorrAdj(nlmePtr nlme)
 {
     int i, j;
     if(nlme->varOpt) {		/* variance function adjustment */
@@ -151,8 +147,7 @@ nlme_wtCorrAdj(nlmePtr nlme)
     }
 }
 
-static double
-nlme_RSS(nlmePtr nlme)
+static double nlme_RSS(nlmePtr nlme)
 {
     nlme->residuals = nlme->result[0] + (nlme->dd->ZXcols - 1) * nlme->dd->N;
     nlme->gradient = nlme->result[0];
@@ -160,8 +155,7 @@ nlme_RSS(nlmePtr nlme)
     return(nlme->RSS);
 }
 
-static double
-nlme_objective(nlmePtr nlme)
+static double nlme_objective(nlmePtr nlme)
 {
     int i;
     double RSS, *srcB;
@@ -179,8 +173,7 @@ nlme_objective(nlmePtr nlme)
     return(RSS);
 }
 
-static void
-nlme_workingRes(nlmePtr nlme)
+static void nlme_workingRes(nlmePtr nlme)
 {
     int i, j, k;
     double *theta = nlme->theta;
@@ -203,8 +196,7 @@ nlme_workingRes(nlmePtr nlme)
 }
 
 
-static double
-nlme_increment(nlmePtr nlme)
+static double nlme_increment(nlmePtr nlme)
 {
     double predObj, *dest, *src, logLik, lRSS,
 	*Ra = R_Calloc(nlme->dd->DmOff[nlme->dd->Q], double),
@@ -298,8 +290,7 @@ nlme_increment(nlmePtr nlme)
 		(((double) nlme->nparTot) * predObj)));
 }
 
-static int
-nlme_iterate(nlmePtr nlme, double *settings)
+static int nlme_iterate(nlmePtr nlme, double *settings)
 {
     double factor, criterion;
     SEXP model = nlme->model;
@@ -350,8 +341,7 @@ nlme_iterate(nlmePtr nlme, double *settings)
     return(iteration - 1);
 }
 
-static void
-nlme_wrapup(nlmePtr nlme)
+static void nlme_wrapup(nlmePtr nlme)
 {
     SEXP model = nlme->model;
     evaluate(nlme->theta, nlme->nparTot , model, nlme->result);
@@ -361,8 +351,7 @@ nlme_wrapup(nlmePtr nlme)
     dimFree(nlme->dd);
 }
 
-void
-fit_nlme(double *ptheta, double *pDmHalf, int *pgroups,
+void fit_nlme(double *ptheta, double *pDmHalf, int *pgroups,
 	 int *pdims, int *pdClass, double *pcorFactor,
 	 double *pvarWeights, int *pcorDims, double *settings,
 	 // 17-11-2015; Fixed sigma patch; E van Willigen; Quantitative Solutions
@@ -384,8 +373,7 @@ fit_nlme(double *ptheta, double *pDmHalf, int *pgroups,
     UNPROTECT(1);
 }
 
-void
-nlme_one_comp_open (int *nrow, double *Resp, double *inmat)
+void nlme_one_comp_open(int *nrow, double *Resp, double *inmat)
 {
     int i, nn = *nrow;
     double ke, ka, tl = 0, delta, C = 0, Ca = 0, interval,
@@ -445,8 +433,7 @@ nlme_one_comp_open (int *nrow, double *Resp, double *inmat)
 
 /* Phenobarbital Model */
 
-void
-nlme_one_comp_first (int *nrow, double *Resp, double *inmat)
+void nlme_one_comp_first(int *nrow, double *Resp, double *inmat)
 {
     int nn = *nrow, mm = 0;
     double v, cl,

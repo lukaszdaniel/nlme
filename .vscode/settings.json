@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "pdmat.h": "c",
+        "matrix.h": "c"
+    }
+}

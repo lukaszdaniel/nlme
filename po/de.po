@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 4.0.0 / nlme 3.1-145\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-18 16:02+0200\n"
+"POT-Creation-Date: 2025-06-23 16:34+0200\n"
 "PO-Revision-Date: 2020-04-01 15:16+0200\n"
 "Last-Translator: Detlef Steuer <steuer@hsu-hh.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -27,7 +27,7 @@ msgstr "Koeffizientenmatrix nicht invertierbar"
 msgid "Unknown spatial correlation class"
 msgstr "Unbekannte räumliche Korrelations-Klasse"
 
-#: nlme.c:469
+#: nlme.c:456
 msgid "First observation on an individual must have a dose"
 msgstr "Erste Beobachtung eines Individuums muss eine Dosis haben"
 

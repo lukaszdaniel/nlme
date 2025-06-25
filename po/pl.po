@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nlme 3.1-115\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-18 16:02+0200\n"
+"POT-Creation-Date: 2025-06-23 16:34+0200\n"
 "PO-Revision-Date: 2024-09-17 17:39+0200\n"
 "Last-Translator: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language-Team: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
@@ -26,9 +26,9 @@ msgstr "Macierz współczynników nie jest odwracalna"
 msgid "Unknown spatial correlation class"
 msgstr "Nieznana klasa przestrzennej korelacji"
 
-#: nlme.c:469
+#: nlme.c:456
 msgid "First observation on an individual must have a dose"
-msgstr "Pierwsza obserwacja jednostki musi mieć zamknięcie"
+msgstr "Pierwsza obserwacja danej jednostki musi mieć ustaloną dawkę"
 
 #: nlmefit.c:427
 #, c-format
@@ -38,7 +38,7 @@ msgstr "Osobliwość w 'backsolve' na poziomie %ld, blok %ld"
 #: nlmefit.c:465
 #, c-format
 msgid "Too many parameters for finite-difference Hessian; npar = %d, nTot = %g."
-msgstr "Zbyt wiele parametrów dla skończonej różnicy Hessianu; npar = %d, nTot = %g."
+msgstr "Zbyt wiele parametrów dla skończonej różnicy hesjanu; npar = %d, nTot = %g."
 
 #: nlmefit.c:585 nlmefit.c:766
 msgid "Overfitted model!"
@@ -64,4 +64,4 @@ msgstr "Nie można utworzyć dekompozycji Cholesky'ego: wiodący minor rzędu %d
 
 #: nlmefit.c:991
 msgid "Haven't written the compound symmetry case for this yet"
-msgstr "Jak na razie nie została napisany przypadek dla tej złożonej symetrii"
+msgstr "Jak na razie nie został napisany przypadek dla tej złożonej symetrii"
