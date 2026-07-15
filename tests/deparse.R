@@ -36,7 +36,7 @@ fm2$call <- fm1$call
 stopifnot(all.equal(fm1, fm2, tolerance = 1e-15))
 
 ## deparse can give multiple lines
-## example from https://stat.ethz.ch/pipermail/r-help/2006-February/086648.html
+## example from https://stat.ethz.ch/pipermail/r-help/2006-February/088466.html
 "mydata2" <-
 structure(list(Tps = c(1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3,
 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6,
@@ -127,7 +127,7 @@ structure(list(Tps = c(1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3,
 0.0622331866694357, 0.215645168287442, 0, 0.859343941945178,
 0.0500810300696456, 0, 0, 0.0628746592609754), Organ =
 structure(rep(c(1L,3L,2L), each=100),
-          .Label = c("Carc", "TD", "Foie"), class = c("ordered", "factor"))),
+          levels = c("Carc", "TD", "Foie"), class = c("ordered", "factor"))),
 row.names = as.character(1:300),
 class = c("nfnGroupedData", "nfGroupedData", "groupedData",
 "data.frame"), formula = quote(Conc ~ Tps | Organ), FUN = function (x)
