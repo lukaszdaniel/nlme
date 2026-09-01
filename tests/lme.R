@@ -66,7 +66,8 @@ stopifnot(
     identical(fixef(fm4), sm4$tTable[,"Value"]),
     all.equal(sm4$tTable[,"Std.Error"],
               c("(Intercept)" = 0.77524603, age = 0.071253264), tol=6e-8),
-    all.equal(i4$reStruct$Subject[,"est."], reSS[,"est."], tol= 1e-7)
+    ## MKL 2026.1.0 gives 1.05353e-07
+    all.equal(i4$reStruct$Subject[,"est."], reSS[,"est."], tol= 5e-7)
     ## (lower, upper) cannot be very accurate for these : ==> tol = *e-4
    ,## "interestingly" 32-bit values changed from 3.2.3 to R-devel(3.3.0):
     all.equal(i4$reStruct$Subject[,c(1,3)], reSS[,c(1,3)], tol = .005)

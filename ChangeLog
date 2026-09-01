@@ -1,3 +1,8 @@
+2016-09-01 Brian Ripley
+
+	* DESCRIPTION (Version, Date): 3.1-171.
+	* tests/lme4.R: increase tolerance, needed for MKL
+
 2026-07-15  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
 
 	* DESCRIPTION (Version, Date): 3.1-170.
