@@ -1,4 +1,10 @@
-2016-09-01 Brian Ripley
+2026-10-31 Brian Ripley
+
+	* DESCRIPTION (Version, Date): 3.1-172.
+	* tests/{deparse,nlme,predict.lme}.R: increase tolerances, needed
+	for MKL
+
+2026-09-01 Brian Ripley
 
 	* DESCRIPTION (Version, Date): 3.1-171.
 	* tests/lme4.R: increase tolerance, needed for MKL

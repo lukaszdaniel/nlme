@@ -1,5 +1,5 @@
-aa307045dcdeef7c0202f319399a52aa *ChangeLog
-340a65a49fa919dca37805c8d1eaa330 *DESCRIPTION
+a773fe00f4f0f314fe781c967f73342f *ChangeLog
+22db506515791e0ae5afea9fd6afbf7a *DESCRIPTION
 398eb829c5b09bf5b661094916d897e4 *LICENSE.note
 5df894793407c151274dc06fb016c138 *NAMESPACE
 af82a6b780b7157da96d3e996fa2b949 *R/VarCorr.R
@@ -409,7 +409,7 @@ ab25428328f64b827b7ff267fc84ab5e *tests/coef.R
 e2f2b1b39a7dce5fd1d32faa8316632d *tests/corMatrix.R
 e06f267cc597e39272f42ad4f54d289d *tests/corStruct.R
 ad776daa5d5177802d1f54cfd836fa68 *tests/data.frame.R
-66e360cd828ad1448020611df9b72850 *tests/deparse.R
+cfa7736d2280b685aa10a29700b7a563 *tests/deparse.R
 486b6ff093d347aca8ea181b747447f2 *tests/deviance.R
 c85119c8b15bd636e35ecaa847316159 *tests/extras.Rin
 5192af83fc732b9c0c2267243436c513 *tests/extras/README
@@ -428,9 +428,9 @@ e71624cafff8e377f7d4a46ff5f4bc9d *tests/gls.R
 9a1cc10926d41bc3ce4a4ad9714dcb8b *tests/lme.Rout.save
 4191899f37fc372e70793b9c71d72304 *tests/missing.R
 99f829516656a88d97a9e9617af9fdaf *tests/missing.Rout.save
-aae142bf4fa00e630823d33e54cb4887 *tests/nlme.R
+2c6ce62215341700e95f7e96aab55d51 *tests/nlme.R
 90102927f576880c5bcbaead004b1537 *tests/nlme2.R
-b21df5718ac58bbc5c73fe106633d882 *tests/predict.lme.R
+ed1ff929ccb4991780c572c4da9f026f *tests/predict.lme.R
 3af9e6227d76510d9b8216dd0e5f9953 *tests/scoping.R
 ad9e8c74401a27ce836fe5f3253dd543 *tests/sigma-fixed-etc.R
 52e8f5b5ecbec55ced361ee194ff972a *tests/ss2.rds

@@ -33,7 +33,11 @@ fm2
 fm2$call <- fm1$call
 ## BUT with macOS's Accelerate:
 ##   Component "apVar": Mean relative difference: 7.07812e-05
-stopifnot(all.equal(fm1, fm2, tolerance = 1e-15))
+## and with MKL 2026.2.0:
+##  Component "varFix": Mean relative difference: 1.146684e-15
+##  Component "apVar": Mean relative difference: 0.0002204191
+##  Component "residuals": Mean relative difference: 2.501139e-14
+stopifnot(all.equal(fm1, fm2, tolerance = 5e-04))
 
 ## deparse can give multiple lines
 ## example from https://stat.ethz.ch/pipermail/r-help/2006-February/088466.html
