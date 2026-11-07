@@ -62,10 +62,12 @@ fm3 <- nlme(height ~ SSasymp(age, Asym, R0, lrc),
             fixed = Asym + R0 + lrc ~ 1,
             random = Asym ~ 1, groups = ~Seed)
 ## explicitly specifying 'groups' failed in 3.1-153 with
-## Error in nlme::nlsList(model = height ~ SSasymp(age, Asym, R0, lrc), data = Loblolly,  : 
+## Error in nlme::nlsList(model = height ~ SSasymp(age, Asym, R0, lrc), data = Loblolly,  :
 ##   unused argument (groups = ~Seed)
 fm2$origCall <- NULL
-stopifnot(all.equal(fm2, fm3))
+## MKL 2026.2.1 has
+##  Component "apVar": Mean relative difference: 0.0001425306
+stopifnot(all.equal(fm2, fm3, tolerance = 2e-3))
 
 
 ## reproduce a simple random-intercept lme() using nlme()
